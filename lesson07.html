@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 7 | 動名詞と不定詞の使い分け - English Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🎓</span>
+    <span><span class="logo-text">English Master</span><span class="logo-sub">高校英語 Zoom レッスン教材</span></span>
+  </a>
+  <a href="index.html" class="btn-home">🏠 メニューへ</a>
+</header>
+
+<main class="container">
+  <div class="lesson-hero">
+    <span class="lesson-badge">LESSON 07 · 第3期</span>
+    <h1>動名詞と不定詞の使い分け</h1>
+    <div class="lesson-meta">
+      <span class="meta-tag">📌 動詞-ing vs to + 動詞原形</span>
+      <span class="meta-tag">⏱ 約60分</span>
+      <span class="meta-tag">🎯 stop -ing vs stop to do</span>
+    </div>
+  </div>
+
+  <div class="timer-wrap">⏱ 学習時間: <span class="timer-num" id="timer">00:00</span></div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- Grammar 1 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説① ── 動名詞（動詞-ing）の基本</div>
+    <div class="section-card-body">
+      <div class="grammar-box">
+        <div class="formula">動詞 + -ing = 動名詞（名詞のはたらき）</div>
+        <p style="margin-top:.4rem">「〜すること」という意味で、文中で主語・目的語・補語になります。</p>
+      </div>
+      <div class="example-box">
+        <div class="eng"><span class="highlight">Swimming</span> is good for your health. <small>（主語）</small></div>
+        <div class="jpn">水泳は健康によい。</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">I enjoy <span class="highlight">listening</span> to music. <small>（目的語）</small></div>
+        <div class="jpn">私は音楽を聴くことを楽しむ。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grammar 2 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説② ── 動詞によって決まる使い分け</div>
+    <div class="section-card-body">
+      <table class="grammar-table">
+        <thead><tr><th>動名詞だけ目的語にとる動詞</th><th>不定詞だけ目的語にとる動詞</th><th>両方OKだが意味が変わる動詞</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>enjoy, finish, avoid, mind, give up, practice, stop（やめる）, consider, deny, quit</td>
+            <td>want, hope, wish, decide, plan, promise, agree, refuse, expect</td>
+            <td>stop, remember, forget, try, regret</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="margin-top:1rem"><strong>⭐ 意味が変わるペア【超重要】</strong></p>
+      <table class="grammar-table">
+        <thead><tr><th>動詞</th><th>動名詞（-ing）</th><th>不定詞（to do）</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>stop</strong></td>
+            <td><em>stop -ing</em>：〜することをやめる<br>I <em>stopped eating</em> junk food.</td>
+            <td><em>stop to do</em>：〜するために立ち止まる<br>I <em>stopped to eat</em> lunch.</td>
+          </tr>
+          <tr>
+            <td><strong>remember</strong></td>
+            <td><em>remember -ing</em>：〜したことを覚えている（過去）<br>I <em>remember meeting</em> her before.</td>
+            <td><em>remember to do</em>：忘れずに〜する（未来）<br>Remember <em>to lock</em> the door.</td>
+          </tr>
+          <tr>
+            <td><strong>forget</strong></td>
+            <td><em>forget -ing</em>：〜したことを忘れる（過去）<br>I'll never <em>forget seeing</em> that movie.</td>
+            <td><em>forget to do</em>：〜するのを忘れる（未来）<br>Don't <em>forget to call</em> me.</td>
+          </tr>
+          <tr>
+            <td><strong>try</strong></td>
+            <td><em>try -ing</em>：試しに〜してみる<br><em>Try adding</em> some salt.</td>
+            <td><em>try to do</em>：〜しようとする（努力）<br>I <em>tried to open</em> the window.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="point-box">
+        <strong>記憶術</strong>：動名詞（-ing）は「過去・現実」のイメージ。不定詞（to do）は「未来・これから」のイメージ！<br>
+        stop to do の「to do」は目的を表す不定詞（副詞的用法）で目的語ではない点に注意。
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 1 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題①｜動名詞 vs 不定詞（選択）</div>
+    <div class="section-card-body">
+      <form id="mcq-form1">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">1</span>I enjoy _______ with my friends on weekends.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" data-correct="true"> hanging out</label>
+            <label class="quiz-option"><input type="radio" name="q1"> to hang out</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans1')">🔍 解答・解説を見る</button>
+            <div id="ans1" class="answer-content hidden">
+              <div class="correct-ans">✅ hanging out</div>
+              <div class="explanation">enjoy は動名詞だけを目的語にとる動詞。enjoy to hang out は誤りです。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">2</span>She decided _______ a new hobby.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2"> finding</label>
+            <label class="quiz-option"><input type="radio" name="q2" data-correct="true"> to find</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans2')">🔍 解答・解説を見る</button>
+            <div id="ans2" class="answer-content hidden">
+              <div class="correct-ans">✅ to find</div>
+              <div class="explanation">decide は不定詞だけを目的語にとる動詞。decide + to do で「〜することを決める」。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">3</span>「私はジャンクフードを食べるのをやめた。」<br>I stopped _______ junk food.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3" data-correct="true"> eating</label>
+            <label class="quiz-option"><input type="radio" name="q3"> to eat</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans3')">🔍 解答・解説を見る</button>
+            <div id="ans3" class="answer-content hidden">
+              <div class="correct-ans">✅ eating</div>
+              <div class="explanation">stop -ing = 〜することをやめる。stop to eat だと「食べるために立ち止まった」という全く違う意味になります！</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">4</span>「昨日鍵をかけたことを覚えている。」<br>I remember _______ the door yesterday.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4" data-correct="true"> locking</label>
+            <label class="quiz-option"><input type="radio" name="q4"> to lock</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans4')">🔍 解答・解説を見る</button>
+            <div id="ans4" class="answer-content hidden">
+              <div class="correct-ans">✅ locking</div>
+              <div class="explanation">remember -ing = 〜したことを覚えている（過去の行動の記憶）。yesterday という過去の表現からも確認できます。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">5</span>「忘れずに薬を飲んでね。」<br>Don't forget _______ your medicine.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5"> taking</label>
+            <label class="quiz-option"><input type="radio" name="q5" data-correct="true"> to take</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans5')">🔍 解答・解説を見る</button>
+            <div id="ans5" class="answer-content hidden">
+              <div class="correct-ans">✅ to take</div>
+              <div class="explanation">forget to do = 〜するのを忘れる（これからのこと）。「忘れずに薬を飲んでね」 = Don't forget to take your medicine.（未来の行動）</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score1')">📊 採点する</button>
+        </div>
+        <div id="score1"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Practice 2 -->
+  <section class="section-card theme-orange">
+    <div class="section-card-header">✏️ 練習問題②｜誤文訂正</div>
+    <div class="section-card-body">
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">6</span>He gave up to play the piano because he was too busy.</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans6')">🔍 解答・解説を見る</button>
+          <div id="ans6" class="answer-content hidden">
+            <div class="correct-ans">✅ He gave up playing the piano...</div>
+            <div class="explanation">give up は動名詞だけを目的語にとる動詞。to play → playing に直す。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">7</span>I tried to opening the window, but it was stuck.</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans7')">🔍 解答・解説を見る</button>
+          <div id="ans7" class="answer-content hidden">
+            <div class="correct-ans">✅ I tried to open the window...</div>
+            <div class="explanation">try to do = 〜しようとする。to の後は動詞の原形。to opening → to open。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">8</span>She is very good at to cook Japanese food.</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans8')">🔍 解答・解説を見る</button>
+          <div id="ans8" class="answer-content hidden">
+            <div class="correct-ans">✅ She is very good at cooking Japanese food.</div>
+            <div class="explanation">前置詞（at）の後は動名詞（-ing形）。be good at -ing = 〜が得意。to cook → cooking。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">📚 長文読解</div>
+    <div class="section-card-body">
+      <div class="reading-passage">
+        <div class="passage-num">PASSAGE</div>
+        <p>　Last year, I decided <span class="underline">(A)</span> make some changes in my life to become healthier. First, I stopped <span class="underline">(B)</span> late-night snacks. It was hard at first, but I got used to it. I also started <span class="underline">(C)</span> every morning, even just for 20 minutes.</p>
+        <p>　On the other hand, I gave up <span class="underline">(D)</span> coffee every morning. Instead, I try <span class="underline">(E)</span> green tea, which has a calming effect.</p>
+        <p>　I remember <span class="underline">(F)</span> very tired all the time before these changes. Now, I feel much better. I hope you will consider <span class="underline">(G)</span> small healthy habits, too.</p>
+      </div>
+
+      <form id="mcq-form2">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">9</span>(A) decided _______ make changes → 不定詞か動名詞か？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq1" data-correct="true"> to（不定詞）</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> making（動名詞）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans1')">🔍 解答・解説を見る</button>
+            <div id="rans1" class="answer-content hidden">
+              <div class="correct-ans">✅ to（decided to make）</div>
+              <div class="explanation">decide は不定詞だけを目的語にとります。decided to make changes = 変化を起こすことを決めた。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">10</span>(B) stopped _______ late-night snacks → どちら？（食べることをやめた）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq2" data-correct="true"> eating（動名詞）</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> to eat（不定詞）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans2')">🔍 解答・解説を見る</button>
+            <div id="rans2" class="answer-content hidden">
+              <div class="correct-ans">✅ eating（stop -ing = やめる）</div>
+              <div class="explanation">stop -ing = やめる。夜食を食べることをやめた。stop to eat なら「食べるために立ち止まった」になってしまいます。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">11</span>(E) try _______ green tea → 試しに飲んでみる</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq3" data-correct="true"> drinking（try -ing = 試してみる）</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> to drink（try to do = しようとする）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans3')">🔍 解答・解説を見る</button>
+            <div id="rans3" class="answer-content hidden">
+              <div class="correct-ans">✅ drinking（try -ing = 試しにやってみる）</div>
+              <div class="explanation">try -ing = 試しにやってみる（できるかどうかはともかく実験的に）。try to drink だと「飲もうと努力する」という意味になります。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">12</span>(F) remember _______ very tired → 過去に疲れていたことを覚えている</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq4" data-correct="true"> being（remember -ing = 過去の記憶）</label>
+            <label class="quiz-option"><input type="radio" name="rq4"> to be（remember to do = これからの行動）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans4')">🔍 解答・解説を見る</button>
+            <div id="rans4" class="answer-content hidden">
+              <div class="correct-ans">✅ being（remember -ing = 〜したことを覚えている）</div>
+              <div class="explanation">before these changes（変化する前）という過去の記憶なので remember -ing。be tired の動名詞形 being tired を使います。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form2','score2')">📊 採点する</button>
+        </div>
+        <div id="score2"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">✍️ 英作文チャレンジ ── 健康のための変化リスト</div>
+    <div class="section-card-body">
+      <p>テーマ：<strong>「健康のために始めたこと・やめたこと」</strong>を英語で書きましょう。</p>
+      <div class="grammar-box">
+        <p>📌 <strong>条件</strong></p>
+        <p>① <strong>started/began + -ing or to</strong> で「始めたこと」を2つ以上</p>
+        <p>② <strong>stopped/quit/gave up + -ing</strong> で「やめたこと」を2つ以上</p>
+        <p>③ <strong>remember / forget + to do または -ing</strong> を1文以上</p>
+        <p>④ 各文に理由（because / so / in order to）を含める</p>
+      </div>
+      <textarea class="writing-area" placeholder="例：I started walking to school every day to get more exercise. I stopped drinking soda because it was bad for my teeth..." rows="8"></textarea>
+      <div style="margin-top:1rem;">
+        <button type="button" class="btn-answer" onclick="toggleAnswer(this,'sample1')">📝 模範解答を見る</button>
+        <div id="sample1" class="answer-content hidden" style="margin-top:.75rem;">
+          <div class="correct-ans">📝 模範解答例</div>
+          <div class="explanation">
+            For my health, I made some important changes this year.<br>
+            I <em>started jogging</em> every morning because I wanted to build stamina. <em>（started -ing）</em><br>
+            I also <em>began eating</em> more vegetables to get enough vitamins. <em>（began -ing）</em><br>
+            On the other hand, I <em>stopped staying up</em> late so that I could sleep at least 8 hours. <em>（stopped -ing = やめた）</em><br>
+            I <em>gave up drinking</em> energy drinks because they made me feel worse. <em>（gave up -ing）</em><br>
+            Now I always <em>remember to drink</em> a glass of water when I wake up. <em>（remember to do = これからの習慣）</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="lesson06.html">← Lesson 6 不定詞の3用法</a>
+    <a href="lesson08.html">Lesson 8 分詞 →</a>
+  </nav>
+</main>
+
+<script src="js/common.js"></script>
+<script>
+  startTimer('timer');
+  setupMCQ('mcq-form1');
+  setupMCQ('mcq-form2');
+  updateProgress('progress', 7, 12);
+</script>
+</body>
+</html>

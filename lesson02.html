@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2 | 未来表現と進行形 - English Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🎓</span>
+    <span>
+      <span class="logo-text">English Master</span>
+      <span class="logo-sub">高校英語 Zoom レッスン教材</span>
+    </span>
+  </a>
+  <a href="index.html" class="btn-home">🏠 メニューへ</a>
+</header>
+
+<main class="container">
+  <div class="lesson-hero">
+    <span class="lesson-badge">LESSON 02 · 第1期</span>
+    <h1>未来表現と進行形</h1>
+    <div class="lesson-meta">
+      <span class="meta-tag">📌 will vs be going to</span>
+      <span class="meta-tag">⏱ 約60分</span>
+      <span class="meta-tag">🎯 現在進行形 / 未来進行形</span>
+    </div>
+  </div>
+
+  <div class="timer-wrap">⏱ 学習時間: <span class="timer-num" id="timer">00:00</span></div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- Grammar 1 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説① ── will vs be going to</div>
+    <div class="section-card-body">
+      <p>英語の未来表現は大きく2つ。<strong>will</strong> と <strong>be going to</strong> はどちらも「〜するつもり」ですが、ニュアンスが違います！</p>
+
+      <table class="grammar-table">
+        <thead><tr><th></th><th>will</th><th>be going to</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>主なニュアンス</strong></td>
+            <td>① その場での決意・意志<br>② 予測（根拠なし）<br>③ 丁寧な申し出・約束</td>
+            <td>① 前からの計画・意図<br>② 予測（明確な根拠あり）</td>
+          </tr>
+          <tr>
+            <td><strong>形</strong></td>
+            <td>will + 動詞の原形</td>
+            <td>am/is/are + going to + 動詞の原形</td>
+          </tr>
+          <tr>
+            <td><strong>否定</strong></td>
+            <td>will not (won't) + 動詞原形</td>
+            <td>am/is/are + not going to + 動詞原形</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="example-box">
+        <div class="eng">A: The phone is ringing! — B: I'<span class="highlight">ll</span> answer it.</div>
+        <div class="jpn">「電話が鳴ってる！」「私が出るよ。」→ その場での決断 → will ✅</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">I'<span class="highlight">m going to</span> visit Kyoto next month. I already have the tickets.</div>
+        <div class="jpn">来月京都に行く予定。もうチケットを持っている。→ 前からの計画 → be going to ✅</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">Look at those clouds! It'<span class="highlight">s going to</span> rain soon.</div>
+        <div class="jpn">あの雲を見て！もうすぐ雨が降るよ。→ 根拠（雲）があるので be going to ✅</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">I think it <span class="highlight">will</span> be sunny tomorrow.</div>
+        <div class="jpn">明日は晴れると思う。→ 根拠のない予測 → will ✅</div>
+      </div>
+      <div class="point-box">
+        <strong>覚え方</strong>：「チケットを買った・予約した・決めた」→ be going to / 「今この瞬間に決めた」→ will
+      </div>
+    </div>
+  </section>
+
+  <!-- Grammar 2 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説② ── 現在進行形と未来進行形</div>
+    <div class="section-card-body">
+      <div class="grammar-box">
+        <p><strong>現在進行形</strong>：今まさに進行中の動作</p>
+        <div class="formula">am / is / are + 動詞-ing</div>
+        <p style="margin-top:.4rem">例: She is <strong>studying</strong> English now. （今、英語を勉強中）</p>
+      </div>
+      <div class="grammar-box">
+        <p><strong>現在進行形 → 近い未来の予定</strong>（特に交通・移動系）</p>
+        <div class="formula">am / is / are + 動詞-ing（＋未来の時を表す語）</div>
+        <p style="margin-top:.4rem">例: I am <strong>leaving</strong> for Tokyo tomorrow morning. （明朝、東京へ出発する予定）</p>
+      </div>
+      <div class="grammar-box">
+        <p><strong>未来進行形</strong>：未来の特定時点で進行中の動作</p>
+        <div class="formula">will be + 動詞-ing</div>
+        <p style="margin-top:.4rem">例: I will be <strong>sleeping</strong> at midnight. （夜中には眠っているだろう）</p>
+      </div>
+
+      <p><strong>-ing形の作り方</strong></p>
+      <table class="grammar-table">
+        <thead><tr><th>パターン</th><th>ルール</th><th>例</th></tr></thead>
+        <tbody>
+          <tr><td>通常</td><td>+ ing</td><td>play → playing, read → reading</td></tr>
+          <tr><td>語末が e</td><td>e を取って + ing</td><td>make → making, write → writing</td></tr>
+          <tr><td>短母音＋子音1字</td><td>子音を重ねて + ing</td><td>run → running, swim → swimming</td></tr>
+          <tr><td>語末が ie</td><td>ie → y + ing</td><td>lie → lying, die → dying</td></tr>
+        </tbody>
+      </table>
+
+      <div class="point-box">
+        <strong>⚠ 状態動詞は進行形にしない！</strong><br>
+        ❌ I am knowing the answer. → ✅ I know the answer.<br>
+        ❌ She is liking this movie. → ✅ She likes this movie.
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 1 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題①｜will vs be going to（選択）</div>
+    <div class="section-card-body">
+      <form id="mcq-form1">
+        <!-- Q1 -->
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">1</span>「電池が切れた。新しいのを買ってくるよ。」→ その場での決断</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" data-correct="true"> I'll buy new batteries.</label>
+            <label class="quiz-option"><input type="radio" name="q1"> I'm going to buy new batteries.</label>
+            <label class="quiz-option"><input type="radio" name="q1"> I buy new batteries.</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans1')">🔍 解答・解説を見る</button>
+            <div id="ans1" class="answer-content hidden">
+              <div class="correct-ans">✅ I'll buy new batteries.</div>
+              <div class="explanation">電池が切れたのを見た「今この瞬間」に買いに行くことを決めた → will が正解。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">2</span>「私は来年、カナダに留学する計画を立てている。」（すでに申し込み済み）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2"> I will study in Canada next year.</label>
+            <label class="quiz-option"><input type="radio" name="q2" data-correct="true"> I'm going to study in Canada next year.</label>
+            <label class="quiz-option"><input type="radio" name="q2"> I study in Canada next year.</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans2')">🔍 解答・解説を見る</button>
+            <div id="ans2" class="answer-content hidden">
+              <div class="correct-ans">✅ I'm going to study in Canada next year.</div>
+              <div class="explanation">「すでに申し込み済み」＝前からの計画・意図があるので be going to が自然。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">3</span>「ガソリンが残り少ない！もうすぐ止まりそうだ。」（根拠あり）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3"> The car will stop soon.</label>
+            <label class="quiz-option"><input type="radio" name="q3" data-correct="true"> The car is going to stop soon.</label>
+            <label class="quiz-option"><input type="radio" name="q3"> The car stops soon.</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans3')">🔍 解答・解説を見る</button>
+            <div id="ans3" class="answer-content hidden">
+              <div class="correct-ans">✅ The car is going to stop soon.</div>
+              <div class="explanation">ガソリン残量という具体的な根拠があるので be going to が適切。will では単なる推測になってしまいます。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">4</span>「誰がドアを開けますか？」「私が開けます。」（その場で申し出）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4" data-correct="true"> I'll open it.</label>
+            <label class="quiz-option"><input type="radio" name="q4"> I'm going to open it.</label>
+            <label class="quiz-option"><input type="radio" name="q4"> I'm opening it.</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans4')">🔍 解答・解説を見る</button>
+            <div id="ans4" class="answer-content hidden">
+              <div class="correct-ans">✅ I'll open it.</div>
+              <div class="explanation">その場で申し出をするときは will。be going to では「前から計画していた」意味になってしまいます。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">5</span>正しい英文を選んでください。<br><em>「彼は今、宿題をしているところだ。」</em></div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5" data-correct="true"> He is doing his homework now.</label>
+            <label class="quiz-option"><input type="radio" name="q5"> He does his homework now.</label>
+            <label class="quiz-option"><input type="radio" name="q5"> He will do his homework now.</label>
+            <label class="quiz-option"><input type="radio" name="q5"> He did his homework now.</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans5')">🔍 解答・解説を見る</button>
+            <div id="ans5" class="answer-content hidden">
+              <div class="correct-ans">✅ He is doing his homework now.</div>
+              <div class="explanation">now（今）があるので、今まさに進行中 → 現在進行形（be + -ing）を使います。do → doing（通常に+ing）。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score1')">📊 採点する</button>
+        </div>
+        <div id="score1"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Practice 2 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題②｜空所補充（進行形・未来形）</div>
+    <div class="section-card-body">
+      <p>（　）内の語を適切な形に変えてください。</p>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">6</span>Look! The baby _______ (smile) at me.</div>
+        <input class="fill-input" placeholder="ここに答えを入力" oninput="checkFill(this,'is smiling')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans6')">🔍 解答・解説を見る</button>
+          <div id="ans6" class="answer-content hidden">
+            <div class="correct-ans">✅ is smiling</div>
+            <div class="explanation">Look!（見て！）は今まさに起きていること → 現在進行形。smile の ing 形は smiling（語末の e を取る）。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">7</span>We _______ (have) a school trip next Friday. （すでに決まった予定）</div>
+        <input class="fill-input" placeholder="ここに答えを入力" oninput="checkFill(this,'are having')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans7')">🔍 解答・解説を見る</button>
+          <div id="ans7" class="answer-content hidden">
+            <div class="correct-ans">✅ are having</div>
+            <div class="explanation">「すでに決まった予定」を表すときは現在進行形で未来を表せます（next Friday という未来の語句と共に）。have → having（e を取る）。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">8</span>My sister _______ (swim) in the pool when I called her.</div>
+        <input class="fill-input" placeholder="ここに答えを入力" oninput="checkFill(this,'was swimming')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans8')">🔍 解答・解説を見る</button>
+          <div id="ans8" class="answer-content hidden">
+            <div class="correct-ans">✅ was swimming</div>
+            <div class="explanation">when I called her（私が電話したとき）が過去なので過去進行形（was/were + -ing）。swim → swimming（短母音＋子音 → 子音を重ねる）。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">9</span>I _______ (not/watch) TV this time tomorrow — I'll be studying.</div>
+        <input class="fill-input" placeholder="ここに答えを入力" oninput="checkFill(this,'will not be watching')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans9')">🔍 解答・解説を見る</button>
+          <div id="ans9" class="answer-content hidden">
+            <div class="correct-ans">✅ will not be watching（won't be watching）</div>
+            <div class="explanation">this time tomorrow（明日の今ごろ）は未来の特定時点 → 未来進行形（will be + -ing）。not は will の後に置きます。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 3 -->
+  <section class="section-card theme-orange">
+    <div class="section-card-header">✏️ 練習問題③｜誤文訂正</div>
+    <div class="section-card-body">
+      <p>下線部に誤りがある場合は正しく直してください。正しい場合は「正しい」と書いてください。</p>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">10</span><u>I am knowing</u> the answer to this question.</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans10')">🔍 解答・解説を見る</button>
+          <div id="ans10" class="answer-content hidden">
+            <div class="correct-ans">✅ I know the answer to this question.</div>
+            <div class="explanation">know は状態動詞 → 進行形にできません。現在形の know に直します。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">11</span>She <u>is going to</u> probably be late. She doesn't know about it.</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans11')">🔍 解答・解説を見る</button>
+          <div id="ans11" class="answer-content hidden">
+            <div class="correct-ans">✅ She will probably be late.</div>
+            <div class="explanation">「本人が知らない」ので、根拠ある計画ではなく単なる推測 → will が自然。be going to は話し手が根拠を持って推測するか、計画があるときに使います。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">12</span>They <u>were playing</u> soccer in the park when it started to rain.</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans12')">🔍 解答・解説を見る</button>
+          <div id="ans12" class="answer-content hidden">
+            <div class="correct-ans">✅ 正しい（They were playing soccer in the park when it started to rain.）</div>
+            <div class="explanation">「雨が降り始めたとき」（過去の特定の時点）に「サッカーをしていた」（進行中の動作）→ 過去進行形（were playing）で正しい表現です。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">📚 長文読解</div>
+    <div class="section-card-body">
+      <p>次の英文を読んで、後の問いに答えましょう。</p>
+      <div class="reading-passage">
+        <div class="passage-num">PASSAGE</div>
+        <p>　Next week, my family <span class="underline">(A)</span> going to have a vacation in Okinawa. We have already booked the hotel and bought the plane tickets. My younger brother, Riku, is very excited. He <span class="underline">(B)</span> about Okinawa's beautiful sea every night these days.</p>
+        <p>　While we are staying in Okinawa, I want to try snorkeling for the first time. My mother says, "Look at that weather forecast — it <span class="underline">(C)</span> sunny all week!" My father is planning to rent a car so that we can visit different places.</p>
+        <p>　I think this trip <span class="underline">(D)</span> a wonderful memory for our family. I can't wait!</p>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">13</span>下線部(A)に入る語を選んでください。</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="rq1" data-correct="true"> is</label>
+          <label class="quiz-option"><input type="radio" name="rq1"> are</label>
+          <label class="quiz-option"><input type="radio" name="rq1"> was</label>
+          <label class="quiz-option"><input type="radio" name="rq1"> will</label>
+        </div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans1')">🔍 解答・解説を見る</button>
+          <div id="rans1" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：is</div>
+            <div class="explanation">my family は単数扱いなので be動詞は is。全体で be going to have（前からの計画）の文です。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">14</span>下線部(B)に最も適切な表現を選んでください。</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="rq2"> dreamed</label>
+          <label class="quiz-option"><input type="radio" name="rq2" data-correct="true"> is dreaming</label>
+          <label class="quiz-option"><input type="radio" name="rq2"> dream</label>
+          <label class="quiz-option"><input type="radio" name="rq2"> will dream</label>
+        </div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans2')">🔍 解答・解説を見る</button>
+          <div id="rans2" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：is dreaming</div>
+            <div class="explanation">these days（最近）は現在の継続的・反復的な動作を表し、現在進行形で使えます。「最近毎晩夢を見ている」というニュアンス。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">15</span>下線部(C)：天気予報という根拠があるので（　）に入る表現を選んでください。</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="rq3"> will be</label>
+          <label class="quiz-option"><input type="radio" name="rq3" data-correct="true"> is going to be</label>
+          <label class="quiz-option"><input type="radio" name="rq3"> was</label>
+        </div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans3')">🔍 解答・解説を見る</button>
+          <div id="rans3" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：is going to be</div>
+            <div class="explanation">「天気予報を見て」という具体的な根拠があるので be going to が適切。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">16</span>下線部(D)に入る最も適切な表現を選んでください。</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="rq4" data-correct="true"> will become</label>
+          <label class="quiz-option"><input type="radio" name="rq4"> is going to become</label>
+          <label class="quiz-option"><input type="radio" name="rq4"> becomes</label>
+        </div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans4')">🔍 解答・解説を見る</button>
+          <div id="rans4" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：will become</div>
+            <div class="explanation">「きっと素晴らしい思い出になると思う」という個人の感想・予測で根拠が明確でない → will が自然。I think...と一緒によく使われます。</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:1.25rem;">
+        <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','scoreR')">📊 採点する（全問）</button>
+        <div id="scoreR"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">✍️ 英作文チャレンジ</div>
+    <div class="section-card-body">
+      <p>カレンダーを見ながら、あなたの<strong>来週・来月の予定</strong>を英語で5文以上書いてください。</p>
+
+      <div class="grammar-box">
+        <p>📌 <strong>条件</strong></p>
+        <p>① <strong>will</strong>（その場の決断または単純な予測）を1文以上</p>
+        <p>② <strong>be going to</strong>（計画・根拠ある予測）を2文以上</p>
+        <p>③ <strong>現在進行形で未来の予定</strong>を1文以上（例: I am meeting...）</p>
+        <p>④ 理由（because / so）を使って動機を説明する</p>
+      </div>
+
+      <textarea class="writing-area" placeholder="例：Next Friday, I am having a Zoom English lesson. I am going to prepare for it tonight..." rows="8"></textarea>
+      <div class="writing-hint">💡 ヒント: <span>I'm going to ...</span> / <span>I'll probably ...</span> / <span>I'm meeting ... on Saturday.</span></div>
+
+      <div style="margin-top:1rem;">
+        <button type="button" class="btn-answer" onclick="toggleAnswer(this,'sample1')">📝 模範解答を見る</button>
+        <div id="sample1" class="answer-content hidden" style="margin-top:.75rem;">
+          <div class="correct-ans">📝 模範解答例</div>
+          <div class="explanation">
+            Next Friday, I <em>am going to</em> have a Zoom English lesson with my teacher. <em>（前からの計画）</em><br>
+            I <em>am</em> also <em>meeting</em> my club members on Saturday to practice basketball. <em>（現在進行形で予定）</em><br>
+            Next month, our class <em>is going to</em> have a school festival, so I <em>am going to</em> prepare a presentation. <em>（計画）</em><br>
+            If I finish my homework early tonight, I <em>will</em> watch my favorite anime. <em>（その場の決断・予測）</em><br>
+            I think next week <em>will</em> be very busy, but I'm excited! <em>（根拠のない予測）</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="lesson01.html">← Lesson 1 基本文型と現在・過去</a>
+    <a href="lesson03.html">Lesson 3 完了形 →</a>
+  </nav>
+</main>
+
+<script src="js/common.js"></script>
+<script>
+  startTimer('timer');
+  setupMCQ('mcq-form1');
+  updateProgress('progress', 2, 12);
+</script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 11 | 仮定法の基本 - English Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🎓</span>
+    <span><span class="logo-text">English Master</span><span class="logo-sub">高校英語 Zoom レッスン教材</span></span>
+  </a>
+  <a href="index.html" class="btn-home">🏠 メニューへ</a>
+</header>
+
+<main class="container">
+  <div class="lesson-hero">
+    <span class="lesson-badge">LESSON 11 · 第4期</span>
+    <h1>仮定法の基本</h1>
+    <div class="lesson-meta">
+      <span class="meta-tag">📌 If I were... / I wish...</span>
+      <span class="meta-tag">⏱ 約60分</span>
+      <span class="meta-tag">🎯 現在の事実に反する仮定</span>
+    </div>
+  </div>
+
+  <div class="timer-wrap">⏱ 学習時間: <span class="timer-num" id="timer">00:00</span></div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- Grammar 1 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説① ── 直説法 vs 仮定法</div>
+    <div class="section-card-body">
+      <div class="grammar-box">
+        <p><strong>仮定法とは？</strong><br>現実とは<em>違う</em>こと・ありえないことを「もし〜だったら」と仮定して表現する方法。</p>
+        <p style="margin-top:.5rem">動詞を<strong>1時制過去にずらす</strong>ことで「現実とは違う」という信号を送ります。</p>
+      </div>
+
+      <table class="grammar-table">
+        <thead><tr><th></th><th>直説法（事実を述べる）</th><th>仮定法過去（現実に反する仮定）</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>意味</strong></td>
+            <td>事実・現実を言う</td>
+            <td>現在の事実に反する（もし〜なら）</td>
+          </tr>
+          <tr>
+            <td><strong>if節</strong></td>
+            <td>現在形</td>
+            <td>過去形（be動詞は were を使う！）</td>
+          </tr>
+          <tr>
+            <td><strong>主節</strong></td>
+            <td>未来形（will〜）</td>
+            <td>would / could / might + 動詞の原形</td>
+          </tr>
+          <tr>
+            <td><strong>例（直説法）</strong></td>
+            <td colspan="2">If it <em>rains</em>, I <em>will</em> stay home. <br>（雨なら家にいる。実際に雨かもしれない）</td>
+          </tr>
+          <tr>
+            <td><strong>例（仮定法）</strong></td>
+            <td colspan="2">If it <em>rained</em>, I <em>would</em> stay home.<br>（雨だったら家にいるのに。でも実際は晴れている）</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="grammar-box">
+        <p><strong>仮定法過去の形（確認）</strong></p>
+        <div class="formula">If + S + 動詞の過去形（be動詞 → were）, S + would / could / might + 動詞の原形</div>
+      </div>
+
+      <div class="example-box">
+        <div class="eng">If I <span class="highlight">were</span> the president, I <span class="highlight">would</span> create more schools.</div>
+        <div class="jpn">もし大統領だったら、もっと学校を作るだろう。（実際は大統領ではない）</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">If I <span class="highlight">had</span> more time, I <span class="highlight">could</span> study Japanese history more.</div>
+        <div class="jpn">もっと時間があれば、日本史をもっと勉強できるのに。（実際は時間がない）</div>
+      </div>
+
+      <div class="point-box">
+        <strong>⚠ be動詞は主語に関わらず were を使う！</strong><br>
+        If I <em>were</em> a bird, ...（× was）<br>
+        If she <em>were</em> here, ...（× was）<br>
+        ※口語では was も使われますが、試験では were が標準です。
+      </div>
+    </div>
+  </section>
+
+  <!-- Grammar 2 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説② ── I wish + 仮定法 / Without〜</div>
+    <div class="section-card-body">
+      <div class="grammar-box">
+        <p><strong>I wish + 仮定法過去</strong>：現在の事実に反する願望</p>
+        <div class="formula">I wish + S + 過去形（be動詞 → were）</div>
+        <p style="margin-top:.4rem">「〜だったらいいのに」（実際は違う）</p>
+      </div>
+      <div class="example-box">
+        <div class="eng">I wish I <span class="highlight">could</span> speak English fluently.</div>
+        <div class="jpn">英語を流暢に話せたらいいのに。（実際はあまり話せない）</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">I wish it <span class="highlight">were</span> sunny today.</div>
+        <div class="jpn">今日晴れていたらいいのに。（実際は雨）</div>
+      </div>
+
+      <div class="grammar-box" style="margin-top:1rem;">
+        <p><strong>Without〜 / But for〜 + 仮定法</strong></p>
+        <div class="formula">Without [But for] + 名詞, S + would / could + 動詞原形</div>
+        <p style="margin-top:.4rem">「〜がなければ、〜だろう（のに）」</p>
+      </div>
+      <div class="example-box">
+        <div class="eng">Without water, we <span class="highlight">couldn't</span> live.</div>
+        <div class="jpn">水がなければ、私たちは生きられない。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 1 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題①｜仮定法の選択</div>
+    <div class="section-card-body">
+      <form id="mcq-form1">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">1</span>If I _______ a lot of money, I would travel around the world.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1"> have</label>
+            <label class="quiz-option"><input type="radio" name="q1" data-correct="true"> had</label>
+            <label class="quiz-option"><input type="radio" name="q1"> will have</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans1')">🔍 解答・解説を見る</button>
+            <div id="ans1" class="answer-content hidden">
+              <div class="correct-ans">✅ had（仮定法過去）</div>
+              <div class="explanation">would があるので仮定法過去 → if節の動詞は過去形 had。「（実際はお金がないが）もしあれば世界旅行するのに。」</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">2</span>If she _______ here, she would help us.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2"> is</label>
+            <label class="quiz-option"><input type="radio" name="q2" data-correct="true"> were</label>
+            <label class="quiz-option"><input type="radio" name="q2"> will be</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans2')">🔍 解答・解説を見る</button>
+            <div id="ans2" class="answer-content hidden">
+              <div class="correct-ans">✅ were（仮定法過去・be動詞はwere）</div>
+              <div class="explanation">主語が she でも仮定法では were を使う。「彼女がここにいれば助けてくれるのに（実際はいない）」</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">3</span>I wish I _______ fly like a bird.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3"> will</label>
+            <label class="quiz-option"><input type="radio" name="q3"> can</label>
+            <label class="quiz-option"><input type="radio" name="q3" data-correct="true"> could</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans3')">🔍 解答・解説を見る</button>
+            <div id="ans3" class="answer-content hidden">
+              <div class="correct-ans">✅ could（I wish + 仮定法）</div>
+              <div class="explanation">I wish + 仮定法過去。can の過去形は could。「鳥のように飛べたらいいのに。」</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">4</span>If I _______ you, I would apologize to her.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4" data-correct="true"> were</label>
+            <label class="quiz-option"><input type="radio" name="q4"> am</label>
+            <label class="quiz-option"><input type="radio" name="q4"> was</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans4')">🔍 解答・解説を見る</button>
+            <div id="ans4" class="answer-content hidden">
+              <div class="correct-ans">✅ were（If I were you〜 = 私があなたなら）</div>
+              <div class="explanation">「If I were you〜（私があなたなら）」はアドバイスの定番表現。仮定法なので were を使う。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">5</span>次のどちらが「現在の事実に反する仮定」を表すか選んでください。</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5"> If it rains tomorrow, I will cancel the trip.</label>
+            <label class="quiz-option"><input type="radio" name="q5" data-correct="true"> If it rained today, I would cancel the trip.</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans5')">🔍 解答・解説を見る</button>
+            <div id="ans5" class="answer-content hidden">
+              <div class="correct-ans">✅ If it rained today, I would cancel the trip.</div>
+              <div class="explanation">過去形 rained + would → 仮定法過去。「（実際は今日晴れているが）もし雨なら旅行をキャンセルするのに」。上の文は「明日雨なら〜」という普通の条件文（直説法）。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score1')">📊 採点する</button>
+        </div>
+        <div id="score1"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Practice 2 -->
+  <section class="section-card theme-orange">
+    <div class="section-card-header">✏️ 練習問題②｜仮定法の文完成・書き換え</div>
+    <div class="section-card-body">
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">6</span>「もし私が鳥だったら、自由に空を飛ぶのに。」を英語に。</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans6')">🔍 解答・解説を見る</button>
+          <div id="ans6" class="answer-content hidden">
+            <div class="correct-ans">✅ If I were a bird, I would fly freely in the sky.</div>
+            <div class="explanation">仮定法過去。If I were〜（be動詞は were）, I would〜（助動詞の過去形 + 動詞原形）。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">7</span>「英語が上手に話せたらいいのに。」I wish ...（英作）</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans7')">🔍 解答・解説を見る</button>
+          <div id="ans7" class="answer-content hidden">
+            <div class="correct-ans">✅ I wish I could speak English well.</div>
+            <div class="explanation">I wish + 仮定法過去。can（できる）の過去形 could を使う。「実際はうまく話せない」という気持ちが込められています。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">8</span>次の文を仮定法を使って書き換えてください。<br>「私は忙しいので、あなたを手伝えない。」</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans8')">🔍 解答・解説を見る</button>
+          <div id="ans8" class="answer-content hidden">
+            <div class="correct-ans">✅ If I were not busy, I could help you.</div>
+            <div class="explanation">「忙しくなければ（実際は忙しいが）助けられるのに」→ 仮定法過去で現在の事実に反する仮定を表現。be動詞は were。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">📚 長文読解 ── "If I were the Prime Minister..." スピーチ</div>
+    <div class="section-card-body">
+      <div class="reading-passage">
+        <div class="passage-num">PASSAGE</div>
+        <p>　At our school's English speech contest, Mei gave the following speech:</p>
+        <p>　"If I <span class="underline">(A)</span> the Prime Minister of Japan, I <span class="underline">(B)</span> do three things. First, I <span class="underline">(C)</span> make education completely free for all students. I wish every child <span class="underline">(D)</span> access to good schools without worrying about money."</p>
+        <p>　"Second, if I <span class="underline">(E)</span> the power to change society, I <span class="underline">(F)</span> create more opportunities for women to be leaders. Without more female leaders, our society <span class="underline">(G)</span> never fully develop."</p>
+        <p>　"Finally, I <span class="underline">(H)</span> invest heavily in environmental protection. If Japan <span class="underline">(I)</span> carbon-neutral, we could show the world a better path."</p>
+      </div>
+
+      <form id="mcq-form2">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">9</span>(A)(B) "If I _____ the PM, I _____ do..."</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq1" data-correct="true"> were / would</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> am / will</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> was / would</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans1')">🔍 解答・解説を見る</button>
+            <div id="rans1" class="answer-content hidden">
+              <div class="correct-ans">✅ were / would（仮定法過去）</div>
+              <div class="explanation">「もし首相なら（実際は違う）」→ 仮定法過去。if節は were、主節は would + 動詞原形。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">10</span>(D) "I wish every child _____ access..."（〜があればいいのに）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq2"> has</label>
+            <label class="quiz-option"><input type="radio" name="rq2" data-correct="true"> had</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> will have</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans2')">🔍 解答・解説を見る</button>
+            <div id="rans2" class="answer-content hidden">
+              <div class="correct-ans">✅ had（I wish + 仮定法）</div>
+              <div class="explanation">I wish + 仮定法過去 → 動詞は過去形 had。「すべての子供が良い学校にアクセスできればいいのに（実際はできない場合がある）」。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">11</span>(G) "Without more female leaders, our society _____ fully develop."</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq3"> will not</label>
+            <label class="quiz-option"><input type="radio" name="rq3" data-correct="true"> could never / would never</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> cannot</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans3')">🔍 解答・解説を見る</button>
+            <div id="rans3" class="answer-content hidden">
+              <div class="correct-ans">✅ could never / would never（Without〜 = 仮定法）</div>
+              <div class="explanation">Without〜（〜がなければ）は仮定法の表現 = If we didn't have more female leaders,〜 という仮定。主節は would / could + 動詞原形。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form2','score2')">📊 採点する</button>
+        </div>
+        <div id="score2"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">✍️ 英作文チャレンジ ── "If I were the president..." スピーチ</div>
+    <div class="section-card-body">
+      <p>テーマ：<strong>「もし大統領・総理大臣・市長」</strong>だったら何をするか、仮定法を使ってスピーチを書きましょう。</p>
+      <div class="grammar-box">
+        <p>📌 <strong>条件</strong></p>
+        <p>① <strong>If I were + 役職, I would〜</strong> を文章の軸にする</p>
+        <p>② <strong>I wish〜</strong> を1文以上使う</p>
+        <p>③ <strong>Without〜 + 仮定法</strong> を1文以上使う</p>
+        <p>④ 3つ以上の政策・行動を述べること</p>
+        <p>⑤ 7文以上書くこと</p>
+      </div>
+      <textarea class="writing-area" placeholder='例："If I were the mayor of Mie City, I would..." ' rows="9"></textarea>
+      <div style="margin-top:1rem;">
+        <button type="button" class="btn-answer" onclick="toggleAnswer(this,'sample1')">📝 模範解答を見る</button>
+        <div id="sample1" class="answer-content hidden" style="margin-top:.75rem;">
+          <div class="correct-ans">📝 模範解答例</div>
+          <div class="explanation">
+            If I <em>were</em> the mayor of Mie City, I <em>would</em> make the city more attractive for young people. <em>（仮定法過去）</em><br>
+            First, I <em>would</em> build more sports facilities so that teenagers could enjoy exercise after school. <em>（would）</em><br>
+            I <em>wish</em> more young people <em>knew</em> about the amazing nature of Mie — the mountains, rivers, and sea. <em>（I wish + 仮定法）</em><br>
+            I also <em>would</em> promote eco-tourism to protect the beautiful environment while attracting visitors. <em>（would）</em><br>
+            Without better public transportation, many people in rural areas <em>could</em> not access hospitals or schools. <em>（Without〜 + 仮定法）</em><br>
+            So, I <em>would</em> improve bus and train services in the countryside. <em>（would）</em><br>
+            Finally, if Mie <em>became</em> more internationally known, people from all over the world <em>would</em> visit and learn about Japanese culture. <em>（仮定法過去）</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="lesson10.html">← Lesson 10 比較表現</a>
+    <a href="lesson12.html">Lesson 12 総まとめ →</a>
+  </nav>
+</main>
+
+<script src="js/common.js"></script>
+<script>
+  startTimer('timer');
+  setupMCQ('mcq-form1');
+  setupMCQ('mcq-form2');
+  updateProgress('progress', 11, 12);
+</script>
+</body>
+</html>

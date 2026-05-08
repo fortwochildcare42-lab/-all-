@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 9 | 関係代名詞・関係副詞 - English Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🎓</span>
+    <span><span class="logo-text">English Master</span><span class="logo-sub">高校英語 Zoom レッスン教材</span></span>
+  </a>
+  <a href="index.html" class="btn-home">🏠 メニューへ</a>
+</header>
+
+<main class="container">
+  <div class="lesson-hero">
+    <span class="lesson-badge">LESSON 09 · 第4期</span>
+    <h1>関係代名詞・関係副詞</h1>
+    <div class="lesson-meta">
+      <span class="meta-tag">📌 who / which / that / where / when</span>
+      <span class="meta-tag">⏱ 約60分</span>
+      <span class="meta-tag">🎯 名詞節・形容詞節の作り方</span>
+    </div>
+  </div>
+
+  <div class="timer-wrap">⏱ 学習時間: <span class="timer-num" id="timer">00:00</span></div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- Grammar 1 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説① ── 関係代名詞の使い分け</div>
+    <div class="section-card-body">
+      <p>関係詞は「2つの文を1つにまとめる接着剤」。先行詞（修飾される名詞）の種類と関係詞節での役割で決まります。</p>
+
+      <table class="grammar-table">
+        <thead><tr><th>先行詞</th><th>主格（〜が）</th><th>目的格（〜を/に）</th><th>所有格（〜の）</th></tr></thead>
+        <tbody>
+          <tr><td><strong>人</strong></td><td>who / that</td><td>who(m) / that（省略可）</td><td>whose</td></tr>
+          <tr><td><strong>人以外（もの・動物）</strong></td><td>which / that</td><td>which / that（省略可）</td><td>whose / of which</td></tr>
+          <tr><td><strong>人もの両方</strong></td><td>that</td><td>that（省略可）</td><td>—</td></tr>
+        </tbody>
+      </table>
+
+      <div class="example-box">
+        <div class="eng">The girl <span class="highlight">who</span> is wearing a blue uniform is my sister.</div>
+        <div class="jpn">青い制服を着ている女の子が私の妹です。（who = 人・主格）</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">The book <span class="highlight">which</span> I bought yesterday is very interesting.</div>
+        <div class="jpn">昨日私が買った本はとても面白い。（which = 物・目的格 → 省略可）</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">She is the only student <span class="highlight">that</span> got full marks.</div>
+        <div class="jpn">彼女が満点を取った唯一の生徒だ。（that = 強調・最上級・only などの後で好まれる）</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grammar 2 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説② ── 関係副詞（where / when / why / how）</div>
+    <div class="section-card-body">
+      <div class="grammar-box">
+        <p><strong>関係副詞 = 前置詞 + which の代わり</strong></p>
+        <div class="formula">先行詞（場所・時・理由・方法）+ 関係副詞 + 完全な文</div>
+      </div>
+      <table class="grammar-table">
+        <thead><tr><th>関係副詞</th><th>先行詞</th><th>例文</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>where</strong></td>
+            <td>場所（place, city, school...）</td>
+            <td>This is the city <em>where</em> I was born.</td>
+          </tr>
+          <tr>
+            <td><strong>when</strong></td>
+            <td>時（time, day, year...）</td>
+            <td>I remember the day <em>when</em> we first met.</td>
+          </tr>
+          <tr>
+            <td><strong>why</strong></td>
+            <td>理由（reason）</td>
+            <td>That is the reason <em>why</em> I study English.</td>
+          </tr>
+          <tr>
+            <td><strong>how</strong></td>
+            <td>先行詞なしで使う</td>
+            <td>This is <em>how</em> we make miso soup.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="point-box">
+        <strong>関係代名詞 vs 関係副詞の見分け方</strong><br>
+        関係詞のあとの節が<strong>不完全</strong>（主語や目的語が欠けている）→ 関係代名詞<br>
+        関係詞のあとの節が<strong>完全</strong>（S・V・Oがそろっている）→ 関係副詞
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 1 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題①｜関係詞の選択</div>
+    <div class="section-card-body">
+      <form id="mcq-form1">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">1</span>The man _______ lives next door is a doctor.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" data-correct="true"> who</label>
+            <label class="quiz-option"><input type="radio" name="q1"> which</label>
+            <label class="quiz-option"><input type="radio" name="q1"> where</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans1')">🔍 解答・解説を見る</button>
+            <div id="ans1" class="answer-content hidden">
+              <div class="correct-ans">✅ who（人・主格）</div>
+              <div class="explanation">先行詞が The man（人）で、関係詞節の中で主語の役割 → who。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">2</span>I like the restaurant _______ she recommended to me.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2" data-correct="true"> which / that</label>
+            <label class="quiz-option"><input type="radio" name="q2"> who</label>
+            <label class="quiz-option"><input type="radio" name="q2"> where</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans2')">🔍 解答・解説を見る</button>
+            <div id="ans2" class="answer-content hidden">
+              <div class="correct-ans">✅ which または that（物・目的格）</div>
+              <div class="explanation">先行詞が restaurant（物）、節の中で目的語の役割 → which / that（省略可）。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">3</span>Osaka is a city _______ many tourists visit every year.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3"> where</label>
+            <label class="quiz-option"><input type="radio" name="q3" data-correct="true"> which / that</label>
+            <label class="quiz-option"><input type="radio" name="q3"> who</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans3')">🔍 解答・解説を見る</button>
+            <div id="ans3" class="answer-content hidden">
+              <div class="correct-ans">✅ which / that（物・目的格）</div>
+              <div class="explanation">many tourists visit _______ every year → 節の中に目的語が欠けている（不完全）→ 関係代名詞 which / that。where なら節が完全でないといけないが、ここでは目的語が欠けている。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">4</span>This is the school _______ my father studied fifty years ago.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4" data-correct="true"> where</label>
+            <label class="quiz-option"><input type="radio" name="q4"> which</label>
+            <label class="quiz-option"><input type="radio" name="q4"> who</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans4')">🔍 解答・解説を見る</button>
+            <div id="ans4" class="answer-content hidden">
+              <div class="correct-ans">✅ where（場所・関係副詞）</div>
+              <div class="explanation">my father studied fifty years ago は完全な文（S+V）。先行詞 school（場所）に場所を示す関係副詞 where を使う。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">5</span>Tell me the reason _______ you were absent yesterday.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5"> when</label>
+            <label class="quiz-option"><input type="radio" name="q5" data-correct="true"> why</label>
+            <label class="quiz-option"><input type="radio" name="q5"> where</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans5')">🔍 解答・解説を見る</button>
+            <div id="ans5" class="answer-content hidden">
+              <div class="correct-ans">✅ why（理由・関係副詞）</div>
+              <div class="explanation">先行詞 the reason（理由）に関係副詞 why。「昨日欠席した理由を教えて。」</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score1')">📊 採点する</button>
+        </div>
+        <div id="score1"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Practice 2 -->
+  <section class="section-card theme-orange">
+    <div class="section-card-header">✏️ 練習問題②｜2文を1文に（関係詞を使って結合）</div>
+    <div class="section-card-body">
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">6</span>次の2文を1文に。<br>① I have a friend. ② She can speak five languages.</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans6')">🔍 解答・解説を見る</button>
+          <div id="ans6" class="answer-content hidden">
+            <div class="correct-ans">✅ I have a friend who can speak five languages.</div>
+            <div class="explanation">先行詞 a friend（人）、節の中で主語 → who。She → who に置き換えて後ろに続ける。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">7</span>次の2文を1文に。<br>① This is the park. ② I used to play there as a child.</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans7')">🔍 解答・解説を見る</button>
+          <div id="ans7" class="answer-content hidden">
+            <div class="correct-ans">✅ This is the park where I used to play as a child.</div>
+            <div class="explanation">先行詞 the park（場所）。I used to play there の there（場所）を where に置き換えて関係副詞に。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">8</span>次の2文を1文に。<br>① Do you know the student? ② The teacher praised him.</div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans8')">🔍 解答・解説を見る</button>
+          <div id="ans8" class="answer-content hidden">
+            <div class="correct-ans">✅ Do you know the student whom[that] the teacher praised?</div>
+            <div class="explanation">先行詞 the student（人）。節の中で目的語の役割（the teacher praised him の him）→ whom / that（省略可）。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">📚 長文読解 ── 三重県クイズ！</div>
+    <div class="section-card-body">
+      <p style="margin-bottom:.5rem;">💡 関係詞を使った三重県・日本文化紹介文です。読んで問いに答えましょう。</p>
+      <div class="reading-passage">
+        <div class="passage-num">PASSAGE</div>
+        <p>　Ise Jingu is a famous shrine <span class="underline">(A)</span> millions of people visit every year. It is located in Ise City, <span class="underline">(B)</span> you can also find many traditional shops and restaurants.</p>
+        <p>　The shrine has a rule <span class="underline">(C)</span> visitors must bow before entering the gate. The priests <span class="underline">(D)</span> work there wear all-white clothing as a symbol of purity.</p>
+        <p>　The Shikinen Sengu is a ceremony <span class="underline">(E)</span> the shrine buildings are rebuilt. It happens every 20 years. The year <span class="underline">(F)</span> the last Sengu took place was 2013.</p>
+        <p>　Ise is also famous for its delicious seafood. That is one reason <span class="underline">(G)</span> many food lovers visit the area.</p>
+      </div>
+
+      <form id="mcq-form2">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">9</span>(A)「何百万人もが訪れる神社」→ 正しい関係詞は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq1" data-correct="true"> that / which（物・目的格）</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> who（人）</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> where（場所・関係副詞）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans1')">🔍 解答・解説を見る</button>
+            <div id="rans1" class="answer-content hidden">
+              <div class="correct-ans">✅ that / which（物・目的格）</div>
+              <div class="explanation">先行詞 shrine（物）、節の中で目的語（millions of people visit ___ every year）→ 関係代名詞 that / which。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">10</span>(B)「伊勢市には〜もある」Ise City が先行詞のとき → ？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq2" data-correct="true"> where（場所・関係副詞）</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> which（物）</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> when（時）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans2')">🔍 解答・解説を見る</button>
+            <div id="rans2" class="answer-content hidden">
+              <div class="correct-ans">✅ where（場所・関係副詞）</div>
+              <div class="explanation">先行詞 Ise City（場所）、節が完全（you can also find...）→ 関係副詞 where。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">11</span>(D)「そこで働く神官たち」→ 先行詞が人、主格 → ？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq3" data-correct="true"> who / that（人・主格）</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> which（物）</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> where（場所）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans3')">🔍 解答・解説を見る</button>
+            <div id="rans3" class="answer-content hidden">
+              <div class="correct-ans">✅ who / that（人・主格）</div>
+              <div class="explanation">先行詞 The priests（人）、節の中で主語 → who / that。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">12</span>(F)「式年遷宮が行われた年」→ 先行詞が「年」→ ？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq4"> where</label>
+            <label class="quiz-option"><input type="radio" name="rq4" data-correct="true"> when</label>
+            <label class="quiz-option"><input type="radio" name="rq4"> which</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans4')">🔍 解答・解説を見る</button>
+            <div id="rans4" class="answer-content hidden">
+              <div class="correct-ans">✅ when（時・関係副詞）</div>
+              <div class="explanation">先行詞 The year（時）、節が完全 → 関係副詞 when。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form2','score2')">📊 採点する</button>
+        </div>
+        <div id="score2"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">✍️ 英作文チャレンジ ── 三重県・日本文化クイズを作ろう</div>
+    <div class="section-card-body">
+      <p>テーマ：<strong>三重県または日本文化</strong>について、関係詞を使ったクイズ文を3問以上作りましょう。</p>
+      <div class="grammar-box">
+        <p>📌 <strong>条件</strong></p>
+        <p>① <strong>関係代名詞</strong>（who / which / that）を2文以上使う</p>
+        <p>② <strong>関係副詞</strong>（where / when / why）を1文以上使う</p>
+        <p>③ 「Q: ○○ is a place/person/thing that〜. What is it?」の形式で作る</p>
+        <p>④ 3問以上書くこと</p>
+      </div>
+      <textarea class="writing-area" placeholder='例：Q1: This is a food that people in Mie love. It is made from fresh seafood and is often eaten raw. What is it? (Answer: Ise ebi / lobster)' rows="8"></textarea>
+      <div style="margin-top:1rem;">
+        <button type="button" class="btn-answer" onclick="toggleAnswer(this,'sample1')">📝 模範解答を見る</button>
+        <div id="sample1" class="answer-content hidden" style="margin-top:.75rem;">
+          <div class="correct-ans">📝 模範解答例</div>
+          <div class="explanation">
+            Q1: This is a shrine <em>that</em> many Japanese people visit at the New Year. It is located in Ise City, Mie Prefecture. What is it? <br>→ Answer: Ise Jingu<br><br>
+            Q2: This is an animal <em>which</em> is considered sacred at Ise Jingu. You can see it walking freely in the shrine grounds. What is it?<br>→ Answer: A chicken (rooster)<br><br>
+            Q3: This is the city <em>where</em> the famous Mikimoto pearl farm started. It is known as the "Pearl Island." Which city is this?<br>→ Answer: Toba City
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="lesson08.html">← Lesson 8 分詞</a>
+    <a href="lesson10.html">Lesson 10 比較表現 →</a>
+  </nav>
+</main>
+
+<script src="js/common.js"></script>
+<script>
+  startTimer('timer');
+  setupMCQ('mcq-form1');
+  setupMCQ('mcq-form2');
+  updateProgress('progress', 9, 12);
+</script>
+</body>
+</html>

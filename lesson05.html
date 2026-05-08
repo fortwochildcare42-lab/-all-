@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 5 | 受動態 - English Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🎓</span>
+    <span><span class="logo-text">English Master</span><span class="logo-sub">高校英語 Zoom レッスン教材</span></span>
+  </a>
+  <a href="index.html" class="btn-home">🏠 メニューへ</a>
+</header>
+
+<main class="container">
+  <div class="lesson-hero">
+    <span class="lesson-badge">LESSON 05 · 第2期</span>
+    <h1>受動態（能動態との書き換え）</h1>
+    <div class="lesson-meta">
+      <span class="meta-tag">📌 be + 過去分詞</span>
+      <span class="meta-tag">⏱ 約60分</span>
+      <span class="meta-tag">🎯 感情の受動態 / by〜</span>
+    </div>
+  </div>
+
+  <div class="timer-wrap">⏱ 学習時間: <span class="timer-num" id="timer">00:00</span></div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- Grammar 1 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説① ── 受動態の基本</div>
+    <div class="section-card-body">
+      <div class="grammar-box">
+        <p><strong>能動態 → 受動態の変換</strong></p>
+        <div class="formula">S + be動詞 + 過去分詞（pp） + by 動作主</div>
+        <p style="margin-top:.4rem">「〜によって…される」という意味。動作主が不明・重要でない場合 by〜 は省略可。</p>
+      </div>
+
+      <div class="example-box">
+        <div class="eng">🔵 能動態: Tom <span class="highlight">wrote</span> this letter.</div>
+        <div class="jpn">トムがこの手紙を書いた。</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">🔴 受動態: This letter <span class="highlight">was written</span> by Tom.</div>
+        <div class="jpn">この手紙はトムによって書かれた。</div>
+      </div>
+
+      <p style="margin-top:1rem"><strong>時制別の受動態</strong></p>
+      <table class="grammar-table">
+        <thead><tr><th>時制</th><th>形</th><th>例</th></tr></thead>
+        <tbody>
+          <tr><td>現在</td><td>am/is/are + pp</td><td>English is spoken here.</td></tr>
+          <tr><td>過去</td><td>was/were + pp</td><td>This bridge was built in 1900.</td></tr>
+          <tr><td>未来</td><td>will be + pp</td><td>The report will be finished by 5 p.m.</td></tr>
+          <tr><td>現在完了</td><td>has/have been + pp</td><td>The email has been sent.</td></tr>
+          <tr><td>助動詞</td><td>助動詞 + be + pp</td><td>It should be done carefully.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Grammar 2 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説② ── 感情を表す受動態</div>
+    <div class="section-card-body">
+      <p>感情動詞は受動態で使うことが多い。<strong>「be + 過去分詞 + 前置詞」</strong>の形をセットで覚えよう！</p>
+      <div class="vocab-grid">
+        <div class="vocab-item"><span class="word">be surprised at/by</span><span class="meaning">〜に驚く</span></div>
+        <div class="vocab-item"><span class="word">be interested in</span><span class="meaning">〜に興味がある</span></div>
+        <div class="vocab-item"><span class="word">be excited about</span><span class="meaning">〜にわくわくしている</span></div>
+        <div class="vocab-item"><span class="word">be disappointed at/with</span><span class="meaning">〜にがっかりする</span></div>
+        <div class="vocab-item"><span class="word">be pleased with</span><span class="meaning">〜に満足している</span></div>
+        <div class="vocab-item"><span class="word">be worried about</span><span class="meaning">〜を心配する</span></div>
+        <div class="vocab-item"><span class="word">be tired of</span><span class="meaning">〜に飽きる・うんざりする</span></div>
+        <div class="vocab-item"><span class="word">be satisfied with</span><span class="meaning">〜に満足する</span></div>
+        <div class="vocab-item"><span class="word">be known to/for/as</span><span class="meaning">〜に/で/として知られている</span></div>
+        <div class="vocab-item"><span class="word">be covered with</span><span class="meaning">〜で覆われている</span></div>
+      </div>
+      <div class="example-box">
+        <div class="eng">I <span class="highlight">was surprised at</span> the news.</div>
+        <div class="jpn">私はそのニュースに驚いた。</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">She <span class="highlight">is interested in</span> Japanese culture.</div>
+        <div class="jpn">彼女は日本文化に興味がある。</div>
+      </div>
+      <div class="point-box">
+        <strong>by 以外の前置詞に注意！</strong>動作主には by を使うが、感情の受動態は動詞ごとに決まった前置詞を使う。be surprised <em>at</em>（× by）など。
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 1 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題①｜能動態→受動態の書き換え</div>
+    <div class="section-card-body">
+      <p>能動態の文を受動態に書き換えてください。解答ボタンで確認しましょう。</p>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">1</span>能動態: <em>Many people visit this temple every year.</em><br>受動態: This temple _______ _______ by many people every year.</div>
+        <input class="fill-input" placeholder="be動詞+過去分詞を入力" oninput="checkFill(this,'is visited')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans1')">🔍 解答・解説を見る</button>
+          <div id="ans1" class="answer-content hidden">
+            <div class="correct-ans">✅ is visited</div>
+            <div class="explanation">主語が This temple（単数）→ is。現在形の受動態なので is + 過去分詞（visited）。visit は規則動詞。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">2</span>能動態: <em>Picasso painted this picture.</em><br>受動態: This picture _______ _______ by Picasso.</div>
+        <input class="fill-input" placeholder="be動詞+過去分詞を入力" oninput="checkFill(this,'was painted')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans2')">🔍 解答・解説を見る</button>
+          <div id="ans2" class="answer-content hidden">
+            <div class="correct-ans">✅ was painted</div>
+            <div class="explanation">過去形の受動態。主語が This picture（単数）→ was。paint は規則動詞（painted）。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">3</span>能動態: <em>They will build a new school next year.</em><br>受動態: A new school _______ _______ _______ next year.</div>
+        <input class="fill-input" placeholder="3語で入力" oninput="checkFill(this,'will be built')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans3')">🔍 解答・解説を見る</button>
+          <div id="ans3" class="answer-content hidden">
+            <div class="correct-ans">✅ will be built</div>
+            <div class="explanation">未来の受動態は will + be + 過去分詞。build の過去分詞は built（不規則）。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">4</span>能動態: <em>Someone stole my wallet.</em><br>受動態: My wallet _______ _______ （動作主不明なので by〜省略）</div>
+        <input class="fill-input" placeholder="be動詞+過去分詞を入力" oninput="checkFill(this,'was stolen')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans4')">🔍 解答・解説を見る</button>
+          <div id="ans4" class="answer-content hidden">
+            <div class="correct-ans">✅ was stolen</div>
+            <div class="explanation">steal の過去分詞は stolen（不規則）。「誰かに」は特定できないので by someone は省略するのが自然。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 2 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題②｜感情の受動態（選択・空所）</div>
+    <div class="section-card-body">
+      <form id="mcq-form1">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">5</span>I am very _______ in astronomy. I read space books every day.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5" data-correct="true"> interested</label>
+            <label class="quiz-option"><input type="radio" name="q5"> exciting</label>
+            <label class="quiz-option"><input type="radio" name="q5"> surprising</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans5')">🔍 解答・解説を見る</button>
+            <div id="ans5" class="answer-content hidden">
+              <div class="correct-ans">✅ interested（be interested in 〜に興味がある）</div>
+              <div class="explanation">be interested in〜 で「〜に興味がある」。exciting（もの・ことが人を興奮させる）と interested（人が興味を持っている）の違いに注意！</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">6</span>We were all _______ _______ the sudden news. （そのニュースに驚いた）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q6" data-correct="true"> surprised at</label>
+            <label class="quiz-option"><input type="radio" name="q6"> surprised in</label>
+            <label class="quiz-option"><input type="radio" name="q6"> exciting about</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans6')">🔍 解答・解説を見る</button>
+            <div id="ans6" class="answer-content hidden">
+              <div class="correct-ans">✅ surprised at</div>
+              <div class="explanation">be surprised at/by〜 で「〜に驚く」。surprised は感情の受動態。at と by どちらも可ですが at がより一般的です。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">7</span>Mie Prefecture _______ _______ its delicious seafood. （〜で知られている）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q7" data-correct="true"> is known for</label>
+            <label class="quiz-option"><input type="radio" name="q7"> is known to</label>
+            <label class="quiz-option"><input type="radio" name="q7"> is known by</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans7')">🔍 解答・解説を見る</button>
+            <div id="ans7" class="answer-content hidden">
+              <div class="correct-ans">✅ is known for</div>
+              <div class="explanation">be known for〜 = 〜で（特徴として）知られている。be known to〜 = 〜に知られている（知っている人）。be known as〜 = 〜として知られている（名前・役割）。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score1')">📊 採点する</button>
+        </div>
+        <div id="score1"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">📚 長文読解</div>
+    <div class="section-card-body">
+      <div class="reading-passage">
+        <div class="passage-num">PASSAGE</div>
+        <p>　Ise Jingu, located in Mie Prefecture, <span class="underline">(A)</span> one of the most important shrines in Japan. It <span class="underline">(B)</span> by millions of visitors every year. The shrine <span class="underline">(C)</span> for its beautiful forests and traditional architecture.</p>
+        <p>　Interestingly, the buildings of Ise Jingu <span class="underline">(D)</span> every 20 years. This practice <span class="underline">(E)</span> "Shikinen Sengu," and it has been carried out for over 1,300 years. Through this tradition, knowledge and skills of traditional Japanese craftsmanship <span class="underline">(F)</span> from generation to generation.</p>
+        <p>　Many visitors are deeply <span class="underline">(G)</span> by the peaceful atmosphere of the shrine. Tourists are often <span class="underline">(H)</span> at how large and quiet the forest is.</p>
+      </div>
+
+      <form id="mcq-form2">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">8</span>(A)「〜である」現在形の受動態または be動詞</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq1" data-correct="true"> is</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> is known</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> was</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans1')">🔍 解答・解説を見る</button>
+            <div id="rans1" class="answer-content hidden">
+              <div class="correct-ans">✅ is（Ise Jingu is one of the most important shrines）</div>
+              <div class="explanation">「〜である」という第2文型（S+V+C）。Ise Jingu = one of... という関係。受動態ではなく be動詞の通常の使い方。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">9</span>(B)「何百万人もの参拝者によって訪れられる」→ 現在の受動態</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq2" data-correct="true"> is visited</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> was visited</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> visits</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans2')">🔍 解答・解説を見る</button>
+            <div id="rans2" class="answer-content hidden">
+              <div class="correct-ans">✅ is visited</div>
+              <div class="explanation">現在の受動態 is + 過去分詞（visited）。毎年恒常的に訪れられるので現在形。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">10</span>(D)「20年ごとに建て替えられる」→ 現在の受動態</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq3" data-correct="true"> are rebuilt</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> were rebuilt</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> rebuild</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans3')">🔍 解答・解説を見る</button>
+            <div id="rans3" class="answer-content hidden">
+              <div class="correct-ans">✅ are rebuilt</div>
+              <div class="explanation">主語が the buildings（複数）→ are。rebuild（建て直す）の過去分詞は rebuilt（不規則）。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">11</span>(F)「伝えられる（世代から世代へ）」→ 現在の受動態</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq4" data-correct="true"> are passed down</label>
+            <label class="quiz-option"><input type="radio" name="rq4"> were passed down</label>
+            <label class="quiz-option"><input type="radio" name="rq4"> pass down</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans4')">🔍 解答・解説を見る</button>
+            <div id="rans4" class="answer-content hidden">
+              <div class="correct-ans">✅ are passed down</div>
+              <div class="explanation">pass down「受け継ぐ」の受動態。主語が knowledge and skills（複数）→ are。現在の習慣的事実なので現在形。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">12</span>(G)「深く感動する」→ 感情の受動態、適切な語を選んでください。</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq5" data-correct="true"> moved</label>
+            <label class="quiz-option"><input type="radio" name="rq5"> moving</label>
+            <label class="quiz-option"><input type="radio" name="rq5"> move</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans5')">🔍 解答・解説を見る</button>
+            <div id="rans5" class="answer-content hidden">
+              <div class="correct-ans">✅ moved（be moved by = 〜に感動する）</div>
+              <div class="explanation">be moved by〜 で「〜に感動する」という感情の受動態。moving は「感動的な」という形容詞（もの・ことを修飾する）。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form2','score2')">📊 採点する</button>
+        </div>
+        <div id="score2"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">✍️ 英作文チャレンジ ── 受動態で説明しよう</div>
+    <div class="section-card-body">
+      <p>テーマ：自分が<strong>最近買ったもの・作った料理・お気に入りの場所</strong>を受動態を使って客観的に説明しましょう。</p>
+      <div class="grammar-box">
+        <p>📌 <strong>条件</strong></p>
+        <p>① <strong>受動態</strong>（be + 過去分詞）を3文以上使う</p>
+        <p>② <strong>感情の受動態</strong>（be surprised at / interested in など）を1文以上</p>
+        <p>③ <strong>by〜（動作主）を省略した受動態</strong>を1文以上</p>
+        <p>④ 5文以上書くこと</p>
+      </div>
+      <textarea class="writing-area" placeholder="例：This cake was made by me last weekend. It is called 'matcha roll cake'..." rows="8"></textarea>
+      <div style="margin-top:1rem;">
+        <button type="button" class="btn-answer" onclick="toggleAnswer(this,'sample1')">📝 模範解答を見る</button>
+        <div id="sample1" class="answer-content hidden" style="margin-top:.75rem;">
+          <div class="correct-ans">📝 模範解答例（料理の場合）</div>
+          <div class="explanation">
+            Last Sunday, I made takoyaki for my family.<br>
+            The batter <em>was mixed</em> carefully with egg, flour, and dashi. <em>（受動態・by省略）</em><br>
+            The octopus pieces <em>were added</em> to each mold and cooked slowly. <em>（受動態・by省略）</em><br>
+            The takoyaki <em>was topped</em> with sauce and mayonnaise by me. <em>（受動態・by あり）</em><br>
+            My family <em>was very pleased with</em> the result. <em>（感情の受動態）</em><br>
+            I <em>was surprised at</em> how delicious homemade takoyaki could be! <em>（感情の受動態）</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="lesson04.html">← Lesson 4 助動詞の活用</a>
+    <a href="lesson06.html">Lesson 6 不定詞 →</a>
+  </nav>
+</main>
+
+<script src="js/common.js"></script>
+<script>
+  startTimer('timer');
+  setupMCQ('mcq-form1');
+  setupMCQ('mcq-form2');
+  updateProgress('progress', 5, 12);
+</script>
+</body>
+</html>

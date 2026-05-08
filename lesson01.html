@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 1 | 基本文型と現在・過去 - English Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🎓</span>
+    <span>
+      <span class="logo-text">English Master</span>
+      <span class="logo-sub">高校英語 Zoom レッスン教材</span>
+    </span>
+  </a>
+  <a href="index.html" class="btn-home">🏠 メニューへ</a>
+</header>
+
+<main class="container">
+
+  <!-- Lesson Hero -->
+  <div class="lesson-hero">
+    <span class="lesson-badge">LESSON 01 · 第1期</span>
+    <h1>基本文型と現在・過去</h1>
+    <div class="lesson-meta">
+      <span class="meta-tag">📌 第1〜第5文型</span>
+      <span class="meta-tag">⏱ 約60分</span>
+      <span class="meta-tag">🎯 状態動詞 vs 動作動詞</span>
+    </div>
+  </div>
+
+  <!-- Timer -->
+  <div class="timer-wrap">⏱ 学習時間: <span class="timer-num" id="timer">00:00</span></div>
+
+  <!-- Progress -->
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- ========== SECTION 1: Grammar ========== -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説① ── 英語の5文型</div>
+    <div class="section-card-body">
+
+      <p>英語のすべての文は、たった<strong>5つの文型（sentence patterns）</strong>に分類できます。主語（S）・動詞（V）・目的語（O）・補語（C）の組み合わせで決まります。</p>
+
+      <table class="grammar-table">
+        <thead><tr><th>文型</th><th>構造</th><th>日本語のイメージ</th><th>代表動詞</th></tr></thead>
+        <tbody>
+          <tr><td><strong>第1文型</strong></td><td><span class="s-part s-s">S</span> + <span class="s-part s-v">V</span></td><td>〜が…する</td><td>run, sleep, smile</td></tr>
+          <tr><td><strong>第2文型</strong></td><td><span class="s-part s-s">S</span> + <span class="s-part s-v">V</span> + <span class="s-part s-c">C</span></td><td>〜は…だ / …になる（S＝C）</td><td>be, become, look, feel</td></tr>
+          <tr><td><strong>第3文型</strong></td><td><span class="s-part s-s">S</span> + <span class="s-part s-v">V</span> + <span class="s-part s-o">O</span></td><td>〜が…を[に]する</td><td>like, have, know, play</td></tr>
+          <tr><td><strong>第4文型</strong></td><td><span class="s-part s-s">S</span> + <span class="s-part s-v">V</span> + <span class="s-part s-o">O₁</span> + <span class="s-part s-o">O₂</span></td><td>〜に…を与える</td><td>give, tell, show, buy</td></tr>
+          <tr><td><strong>第5文型</strong></td><td><span class="s-part s-s">S</span> + <span class="s-part s-v">V</span> + <span class="s-part s-o">O</span> + <span class="s-part s-c">C</span></td><td>〜を…の状態にする（O＝C）</td><td>make, call, find, keep</td></tr>
+        </tbody>
+      </table>
+
+      <div class="grammar-box">
+        <p><strong>見分け方のカギ</strong></p>
+        <p>① Cが来るとき → S＝C（イコール関係）になる<br>
+           ② Oが1つ → 第3文型、Oが2つ → 第4文型</p>
+      </div>
+
+      <p><strong>各文型の例文</strong></p>
+
+      <div class="example-box">
+        <div class="eng">Birds <span class="highlight">sing</span> in the morning. <small style="color:var(--gray-400)">[第1文型 S+V]</small></div>
+        <div class="jpn">鳥たちは朝に歌う。</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">She <span class="highlight">looks</span> happy. <small style="color:var(--gray-400)">[第2文型 S+V+C]</small></div>
+        <div class="jpn">彼女は幸せそうに見える。（she = happy）</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">I <span class="highlight">play</span> tennis every day. <small style="color:var(--gray-400)">[第3文型 S+V+O]</small></div>
+        <div class="jpn">私は毎日テニスをする。</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">My teacher <span class="highlight">gave</span> me a book. <small style="color:var(--gray-400)">[第4文型 S+V+O+O]</small></div>
+        <div class="jpn">先生が私に本をくれた。</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">We <span class="highlight">call</span> him Ken. <small style="color:var(--gray-400)">[第5文型 S+V+O+C]</small></div>
+        <div class="jpn">私たちは彼をケンと呼ぶ。（him = Ken）</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 2: State vs Action verbs ========== -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説② ── 状態動詞 vs 動作動詞</div>
+    <div class="section-card-body">
+      <table class="grammar-table">
+        <thead><tr><th>種類</th><th>特徴</th><th>例</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>状態動詞</strong><br><em>stative verbs</em></td>
+            <td>継続する「状態」を表す。<br>進行形（-ing）にしない</td>
+            <td>know, like, love, have, own, believe, want, see, hear</td>
+          </tr>
+          <tr>
+            <td><strong>動作動詞</strong><br><em>action verbs</em></td>
+            <td>意志的な「動作」を表す。<br>進行形にできる</td>
+            <td>run, write, eat, study, play, make, go, come</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="point-box">
+        <strong>❌ I am knowing the answer.</strong>（know は状態動詞 → 進行形NG）<br>
+        <strong>✅ I know the answer.</strong>（現在形でOK）
+      </div>
+
+      <p><strong>現在形と過去形の形</strong></p>
+      <div class="grammar-box">
+        <div class="formula">規則動詞: 原形 + -(e)d</div>&nbsp;
+        <div class="formula">不規則動詞: 個別に暗記！</div>
+        <p style="margin-top:.5rem">例: <strong>play → played</strong>（規則）　<strong>go → went</strong>（不規則）</p>
+      </div>
+
+      <p><strong>よく使う不規則動詞（15選）</strong></p>
+      <div class="vocab-grid">
+        <div class="vocab-item"><span class="word">go → went → gone</span><span class="meaning">行く</span></div>
+        <div class="vocab-item"><span class="word">see → saw → seen</span><span class="meaning">見る</span></div>
+        <div class="vocab-item"><span class="word">eat → ate → eaten</span><span class="meaning">食べる</span></div>
+        <div class="vocab-item"><span class="word">write → wrote → written</span><span class="meaning">書く</span></div>
+        <div class="vocab-item"><span class="word">have → had → had</span><span class="meaning">持つ</span></div>
+        <div class="vocab-item"><span class="word">take → took → taken</span><span class="meaning">取る</span></div>
+        <div class="vocab-item"><span class="word">give → gave → given</span><span class="meaning">与える</span></div>
+        <div class="vocab-item"><span class="word">speak → spoke → spoken</span><span class="meaning">話す</span></div>
+        <div class="vocab-item"><span class="word">come → came → come</span><span class="meaning">来る</span></div>
+        <div class="vocab-item"><span class="word">make → made → made</span><span class="meaning">作る</span></div>
+        <div class="vocab-item"><span class="word">buy → bought → bought</span><span class="meaning">買う</span></div>
+        <div class="vocab-item"><span class="word">know → knew → known</span><span class="meaning">知る</span></div>
+        <div class="vocab-item"><span class="word">think → thought → thought</span><span class="meaning">思う</span></div>
+        <div class="vocab-item"><span class="word">get → got → got/gotten</span><span class="meaning">得る</span></div>
+        <div class="vocab-item"><span class="word">read → read → read</span><span class="meaning">読む</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 3: Practice ========== -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題①｜文型の識別</div>
+    <div class="section-card-body">
+      <p>各文の文型を選んでください。</p>
+      <form id="mcq-form1">
+
+        <!-- Q1 -->
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">1</span>The dog runs fast.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" data-correct="true"> 第1文型（S+V）</label>
+            <label class="quiz-option"><input type="radio" name="q1"> 第2文型（S+V+C）</label>
+            <label class="quiz-option"><input type="radio" name="q1"> 第3文型（S+V+O）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans1')">🔍 解答・解説を見る</button>
+            <div id="ans1" class="answer-content hidden">
+              <div class="correct-ans">✅ 正解：第1文型（S+V）</div>
+              <div class="explanation">The dog（S）＋ runs（V）＋ fast（M:副詞）。fastは修飾語（M）なので文型には含めません。動詞の後に目的語も補語もないので第1文型です。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">2</span>She became a doctor.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2"> 第1文型（S+V）</label>
+            <label class="quiz-option"><input type="radio" name="q2" data-correct="true"> 第2文型（S+V+C）</label>
+            <label class="quiz-option"><input type="radio" name="q2"> 第3文型（S+V+O）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans2')">🔍 解答・解説を見る</button>
+            <div id="ans2" class="answer-content hidden">
+              <div class="correct-ans">✅ 正解：第2文型（S+V+C）</div>
+              <div class="explanation">She（S）＋ became（V）＋ a doctor（C）。She = a doctor の関係が成り立つので補語（C）です。become は第2文型を作る代表的な動詞。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">3</span>My father made me a bento.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3"> 第3文型（S+V+O）</label>
+            <label class="quiz-option"><input type="radio" name="q3" data-correct="true"> 第4文型（S+V+O+O）</label>
+            <label class="quiz-option"><input type="radio" name="q3"> 第5文型（S+V+O+C）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans3')">🔍 解答・解説を見る</button>
+            <div id="ans3" class="answer-content hidden">
+              <div class="correct-ans">✅ 正解：第4文型（S+V+O+O）</div>
+              <div class="explanation">My father（S）＋ made（V）＋ me（O₁）＋ a bento（O₂）。「私にお弁当を作ってくれた」。me ≠ a bento なのでOがふたつ（第4文型）。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">4</span>We found the problem difficult.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4"> 第3文型（S+V+O）</label>
+            <label class="quiz-option"><input type="radio" name="q4"> 第4文型（S+V+O+O）</label>
+            <label class="quiz-option"><input type="radio" name="q4" data-correct="true"> 第5文型（S+V+O+C）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans4')">🔍 解答・解説を見る</button>
+            <div id="ans4" class="answer-content hidden">
+              <div class="correct-ans">✅ 正解：第5文型（S+V+O+C）</div>
+              <div class="explanation">We（S）＋ found（V）＋ the problem（O）＋ difficult（C）。the problem = difficult の関係が成り立つので補語（C）。第5文型の find は「〜を…だと分かる」の意味。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">5</span>次の文の空欄に入る適切な語を選んでください。<br><em>I _______ very tired yesterday, so I went to bed early.</em></div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5" data-correct="true"> was</label>
+            <label class="quiz-option"><input type="radio" name="q5"> were</label>
+            <label class="quiz-option"><input type="radio" name="q5"> am</label>
+            <label class="quiz-option"><input type="radio" name="q5"> be</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans5')">🔍 解答・解説を見る</button>
+            <div id="ans5" class="answer-content hidden">
+              <div class="correct-ans">✅ 正解：was</div>
+              <div class="explanation">yesterday（昨日）という過去を示す語があるので過去形が必要。主語が I なので be動詞の過去形は was。were は you / they などに使います。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score1')">📊 採点する</button>
+        </div>
+        <div id="score1"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 4: Fill in blanks ========== -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題②｜現在形・過去形の使い分け（空所補充）</div>
+    <div class="section-card-body">
+      <p>（　）内の動詞を適切な形（現在形または過去形）に変えてください。答えを入力してから解答ボタンを押しましょう。</p>
+
+      <!-- Q6 -->
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">6</span>She _______ (study) English every morning.</div>
+        <input class="fill-input" id="fill1" placeholder="ここに答えを入力" oninput="checkFill(this,'studies')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans6')">🔍 解答・解説を見る</button>
+          <div id="ans6" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：studies</div>
+            <div class="explanation">every morning（毎朝）は習慣を表すので<strong>現在形</strong>。主語が she なので三単現の -s が必要。study は語尾が子音＋y なので -ies に変化します（study → studies）。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">7</span>We _______ (visit) Kyoto last summer.</div>
+        <input class="fill-input" id="fill2" placeholder="ここに答えを入力" oninput="checkFill(this,'visited')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans7')">🔍 解答・解説を見る</button>
+          <div id="ans7" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：visited</div>
+            <div class="explanation">last summer（昨年の夏）は過去を示す表現。visit は規則動詞なので -ed をつけて visited。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">8</span>He _______ (know) the answer, but he didn't say anything.</div>
+        <input class="fill-input" id="fill3" placeholder="ここに答えを入力" oninput="checkFill(this,'knew')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans8')">🔍 解答・解説を見る</button>
+          <div id="ans8" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：knew</div>
+            <div class="explanation">didn't say（過去）と時制を合わせて過去形。know は不規則動詞で過去形は knew。状態動詞なので進行形（knowing）にしないこと！</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q9 -->
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">9</span>My parents _______ (go) to the supermarket an hour ago.</div>
+        <input class="fill-input" id="fill4" placeholder="ここに答えを入力" oninput="checkFill(this,'went')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans9')">🔍 解答・解説を見る</button>
+          <div id="ans9" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：went</div>
+            <div class="explanation">an hour ago（1時間前）は過去を表す。go の過去形は went（不規則）。goed ではありません！</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q10 -->
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">10</span>The museum _______ (open) at 9 a.m. every day.</div>
+        <input class="fill-input" id="fill5" placeholder="ここに答えを入力" oninput="checkFill(this,'opens')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans10')">🔍 解答・解説を見る</button>
+          <div id="ans10" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：opens</div>
+            <div class="explanation">every day（毎日）＝習慣・事実 → 現在形。主語が The museum（3人称単数）なので -s をつけて opens。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 5: 並べ替え ========== -->
+  <section class="section-card theme-orange">
+    <div class="section-card-header">✏️ 練習問題③｜語句整序（並べ替え）</div>
+    <div class="section-card-body">
+      <p>日本語に合うように、[ ] 内の語句を並べ替えて英文を作ってください。</p>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">11</span>私の兄は私に新しいゲームをくれた。<br><small style="color:var(--gray-500)">[ gave / me / my brother / a new game ]</small></div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans11')">🔍 解答・解説を見る</button>
+          <div id="ans11" class="answer-content hidden">
+            <div class="correct-ans">✅ My brother gave me a new game.</div>
+            <div class="explanation">第4文型（S+V+O₁+O₂）。give + 人 + 物 の語順。「兄が（私に）（新しいゲームを）くれた」。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">12</span>私たちはその映画をおもしろいと感じた。<br><small style="color:var(--gray-500)">[ the movie / found / we / interesting ]</small></div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans12')">🔍 解答・解説を見る</button>
+          <div id="ans12" class="answer-content hidden">
+            <div class="correct-ans">✅ We found the movie interesting.</div>
+            <div class="explanation">第5文型（S+V+O+C）。find + O + C（形容詞）で「OをCだと分かる/感じる」。the movie = interesting の関係。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">13</span>彼女は昨夜、図書館で英語を勉強した。<br><small style="color:var(--gray-500)">[ in the library / studied / she / English / last night ]</small></div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans13')">🔍 解答・解説を見る</button>
+          <div id="ans13" class="answer-content hidden">
+            <div class="correct-ans">✅ She studied English in the library last night.</div>
+            <div class="explanation">第3文型（S+V+O）。修飾語（場所 → 時）の語順が自然。study の過去形は studied（規則変化）。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 6: Reading ========== -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">📚 長文読解</div>
+    <div class="section-card-body">
+      <p>次の英文を読んで、後の問いに答えましょう。</p>
+
+      <div class="reading-passage">
+        <div class="passage-num">PASSAGE</div>
+        <p>　My name is Aoi Tanaka. I am a first-year high school student in Mie Prefecture. I <span class="underline">(A)</span> in a small town near the sea, and I love the sound of the waves. Every morning, I walk to school with my best friend, Hina. We always talk about our dreams.</p>
+        <p>　Last year, I <span class="underline">(B)</span> English very hard because I wanted to understand English songs. My homeroom teacher, Ms. Yamamoto, taught me a lot. She showed me many interesting books and <span class="underline">(C)</span> me a good dictionary.</p>
+        <p>　Now I have a new goal. I want to become an English teacher in the future. I think English <span class="underline">(D)</span> a bridge between Japan and the world.</p>
+      </div>
+
+      <!-- Reading Q1 -->
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">14</span>下線部(A)に入る最も適切な動詞を選んでください。</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="rq1" data-correct="true"> live</label>
+          <label class="quiz-option"><input type="radio" name="rq1"> lived</label>
+          <label class="quiz-option"><input type="radio" name="rq1"> am living</label>
+          <label class="quiz-option"><input type="radio" name="rq1"> lives</label>
+        </div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans1')">🔍 解答・解説を見る</button>
+          <div id="rans1" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：live</div>
+            <div class="explanation">現在の居住地を表すので現在形。主語が I なので三単現の -s は不要。live は動作動詞ですが「住んでいる（状態）」を表すときは現在進行形より現在形が自然です。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reading Q2 -->
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">15</span>下線部(B)に入る最も適切な動詞の形を選んでください。</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="rq2"> study</label>
+          <label class="quiz-option"><input type="radio" name="rq2" data-correct="true"> studied</label>
+          <label class="quiz-option"><input type="radio" name="rq2"> studies</label>
+          <label class="quiz-option"><input type="radio" name="rq2"> am studying</label>
+        </div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans2')">🔍 解答・解説を見る</button>
+          <div id="rans2" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：studied</div>
+            <div class="explanation">Last year（昨年）という過去の表現があるので過去形。study の過去形は studied（y → ied）。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reading Q3 -->
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">16</span>下線部(C)「先生が私に良い辞書をくれた」の空欄に適切な語を入れ、文型を答えてください。</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="rq3" data-correct="true"> gave（第4文型）</label>
+          <label class="quiz-option"><input type="radio" name="rq3"> gave（第3文型）</label>
+          <label class="quiz-option"><input type="radio" name="rq3"> gives（第4文型）</label>
+        </div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans3')">🔍 解答・解説を見る</button>
+          <div id="rans3" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：gave（第4文型）</div>
+            <div class="explanation">showed と等位接続（and）なので過去形 gave。She gave me a good dictionary. は S+V+O₁(me)+O₂(a good dictionary) の第4文型。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reading Q4 -->
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">17</span>下線部(D)に入る語と文型の組み合わせとして正しいものを選んでください。</div>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="rq4" data-correct="true"> is（第2文型）</label>
+          <label class="quiz-option"><input type="radio" name="rq4"> is（第3文型）</label>
+          <label class="quiz-option"><input type="radio" name="rq4"> makes（第5文型）</label>
+        </div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans4')">🔍 解答・解説を見る</button>
+          <div id="rans4" class="answer-content hidden">
+            <div class="correct-ans">✅ 正解：is（第2文型）</div>
+            <div class="explanation">English（S）＋ is（V）＋ a bridge（C）。English = a bridge の関係が成り立つ第2文型（S+V+C）。be動詞は第2文型の代表的な動詞です。</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:1.25rem;">
+        <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score2')">📊 読解問題も採点（Q1〜Q4と合算）</button>
+        <div id="score2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 7: Writing ========== -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">✍️ 英作文チャレンジ</div>
+    <div class="section-card-body">
+      <p>下の条件をすべて満たして、自己紹介の英文を<strong>5文以上</strong>書いてください。Zoomのチャットまたは口頭で発表しましょう！</p>
+
+      <div class="grammar-box">
+        <p>📌 <strong>条件</strong>（すべて使うこと！）</p>
+        <p>① <strong>第2文型</strong>（I am ... / I look ...）を1文以上</p>
+        <p>② <strong>第3文型</strong>（I like / I play / I know ...）を1文以上</p>
+        <p>③ <strong>第4文型または第5文型</strong>を1文以上</p>
+        <p>④ <strong>過去形</strong>を使った文を1文以上</p>
+      </div>
+
+      <textarea class="writing-area" placeholder="例：My name is Yuki. I am a high school student in Mie. I like music very much...（ここに英文を書こう）" rows="8"></textarea>
+      <div class="writing-hint">💡 ヒント: <span>My name is ～.</span> / <span>I am from ～.</span> / <span>My mother calls me ～.</span> など</div>
+
+      <div style="margin-top:1rem;">
+        <button type="button" class="btn-answer" id="sample-btn1" onclick="toggleAnswer(this,'sample1')">📝 模範解答を見る</button>
+        <div id="sample1" class="answer-content hidden" style="margin-top:.75rem;">
+          <div class="correct-ans">📝 模範解答例</div>
+          <div class="explanation">
+            My name is Yuki Mori. <em>（第2文型: S+V+C）</em><br>
+            I am a first-year student at Mie High School. <em>（第2文型）</em><br>
+            I like playing soccer and listening to music. <em>（第3文型）</em><br>
+            My friends call me "Yuki-chan." <em>（第5文型: S+V+O+C）</em><br>
+            Last year, I won a soccer tournament with my team. <em>（過去形・第3文型）</em><br>
+            My homeroom teacher gave me good advice about studying. <em>（第4文型: S+V+O+O）</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="lesson-nav">
+    <a href="index.html">🏠 メニューへ戻る</a>
+    <a href="lesson02.html">Lesson 2 未来表現と進行形 →</a>
+  </nav>
+
+</main>
+
+<script src="js/common.js"></script>
+<script>
+  startTimer('timer');
+  setupMCQ('mcq-form1');
+  updateProgress('progress', 1, 12);
+</script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3 | 完了形 - English Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🎓</span>
+    <span><span class="logo-text">English Master</span><span class="logo-sub">高校英語 Zoom レッスン教材</span></span>
+  </a>
+  <a href="index.html" class="btn-home">🏠 メニューへ</a>
+</header>
+
+<main class="container">
+  <div class="lesson-hero">
+    <span class="lesson-badge">LESSON 03 · 第2期</span>
+    <h1>完了形（現在完了・完了進行形）</h1>
+    <div class="lesson-meta">
+      <span class="meta-tag">📌 have + 過去分詞</span>
+      <span class="meta-tag">⏱ 約60分</span>
+      <span class="meta-tag">🎯 継続・完了・経験・結果</span>
+    </div>
+  </div>
+
+  <div class="timer-wrap">⏱ 学習時間: <span class="timer-num" id="timer">00:00</span></div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- Grammar 1 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説① ── 現在完了形の4用法</div>
+    <div class="section-card-body">
+      <div class="grammar-box">
+        <div class="formula">have / has + 過去分詞（pp）</div>
+        <p style="margin-top:.4rem">「過去のことが現在にも関係している」のが現在完了のポイント！</p>
+      </div>
+
+      <table class="grammar-table">
+        <thead><tr><th>用法</th><th>意味</th><th>よく使う表現</th><th>例文</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>継続</strong></td>
+            <td>（ずっと）〜している</td>
+            <td>for 〜, since 〜, how long</td>
+            <td>I <em>have lived</em> here <strong>for</strong> five years.</td>
+          </tr>
+          <tr>
+            <td><strong>完了</strong></td>
+            <td>（ちょうど）〜した</td>
+            <td>just, already, yet</td>
+            <td>She <em>has just finished</em> her homework.</td>
+          </tr>
+          <tr>
+            <td><strong>経験</strong></td>
+            <td>〜したことがある</td>
+            <td>ever, never, before, once, twice</td>
+            <td>Have you <em>ever eaten</em> natto?</td>
+          </tr>
+          <tr>
+            <td><strong>結果</strong></td>
+            <td>〜した（その結果今…だ）</td>
+            <td>（特定の副詞なし、文脈から判断）</td>
+            <td>He <em>has gone</em> to the US.（→ 今ここにいない）</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="point-box">
+        <strong>現在完了と一緒に使えない時制副詞</strong><br>
+        ❌ yesterday, last year, ago, when（過去の特定時点を表す語）<br>
+        → 過去の特定時点を示す場合は<strong>過去形</strong>を使う！<br>
+        ✅ I <em>saw</em> him yesterday. （× I have seen him yesterday.）
+      </div>
+    </div>
+  </section>
+
+  <!-- Grammar 2 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説② ── 現在完了進行形</div>
+    <div class="section-card-body">
+      <div class="grammar-box">
+        <div class="formula">have / has + been + 動詞-ing</div>
+        <p style="margin-top:.4rem">「過去から今まで、ずっと〜し続けている」（動作の継続）</p>
+      </div>
+
+      <div class="example-box">
+        <div class="eng">I <span class="highlight">have been studying</span> English for three years.</div>
+        <div class="jpn">私は3年間ずっと英語を勉強し続けている。</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">It <span class="highlight">has been raining</span> since this morning.</div>
+        <div class="jpn">今朝からずっと雨が降り続いている。</div>
+      </div>
+
+      <table class="grammar-table">
+        <thead><tr><th></th><th>現在完了（継続）</th><th>現在完了進行形</th></tr></thead>
+        <tbody>
+          <tr><td><strong>形</strong></td><td>have + pp</td><td>have + been + -ing</td></tr>
+          <tr><td><strong>使う動詞</strong></td><td>状態動詞・動作動詞</td><td>主に動作動詞（動きを強調）</td></tr>
+          <tr><td><strong>ニュアンス</strong></td><td>状態の継続</td><td>動作が継続中（今もやっている感）</td></tr>
+          <tr>
+            <td><strong>例</strong></td>
+            <td>I have lived here for 10 years.<br><small>（10年間住んでいる＝状態）</small></td>
+            <td>I have been running for an hour.<br><small>（1時間ずっと走り続けている）</small></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Practice 1 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題①｜現在完了の用法識別</div>
+    <div class="section-card-body">
+      <form id="mcq-form1">
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">1</span>Have you ever been to Hokkaido?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" data-correct="true"> 経験</label>
+            <label class="quiz-option"><input type="radio" name="q1"> 継続</label>
+            <label class="quiz-option"><input type="radio" name="q1"> 完了</label>
+            <label class="quiz-option"><input type="radio" name="q1"> 結果</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans1')">🔍 解答・解説を見る</button>
+            <div id="ans1" class="answer-content hidden">
+              <div class="correct-ans">✅ 経験</div>
+              <div class="explanation">ever（これまでに）は経験用法のキーワード。「北海道に行ったことがありますか？」過去から現在にかけての経験を問う文。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">2</span>She has already done her homework.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2"> 経験</label>
+            <label class="quiz-option"><input type="radio" name="q2"> 継続</label>
+            <label class="quiz-option"><input type="radio" name="q2" data-correct="true"> 完了</label>
+            <label class="quiz-option"><input type="radio" name="q2"> 結果</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans2')">🔍 解答・解説を見る</button>
+            <div id="ans2" class="answer-content hidden">
+              <div class="correct-ans">✅ 完了</div>
+              <div class="explanation">already（もう、すでに）は完了用法のキーワード。「彼女はもう宿題を終えた」＝完了の意味。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">3</span>He has gone to Australia.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3"> 経験</label>
+            <label class="quiz-option"><input type="radio" name="q3"> 継続</label>
+            <label class="quiz-option"><input type="radio" name="q3"> 完了</label>
+            <label class="quiz-option"><input type="radio" name="q3" data-correct="true"> 結果</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans3')">🔍 解答・解説を見る</button>
+            <div id="ans3" class="answer-content hidden">
+              <div class="correct-ans">✅ 結果</div>
+              <div class="explanation">have gone to = 行ってしまった（今ここにいない）という結果を表します。have been to との違いに注意：have been to = 行ったことがある（経験）、have gone to = 行ってしまった（結果）。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">4</span>My grandmother has lived in Mie for 60 years.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4"> 経験</label>
+            <label class="quiz-option"><input type="radio" name="q4" data-correct="true"> 継続</label>
+            <label class="quiz-option"><input type="radio" name="q4"> 完了</label>
+            <label class="quiz-option"><input type="radio" name="q4"> 結果</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans4')">🔍 解答・解説を見る</button>
+            <div id="ans4" class="answer-content hidden">
+              <div class="correct-ans">✅ 継続</div>
+              <div class="explanation">for 60 years（60年間）は期間を表す → 継続用法。「60年間ずっと三重に住んでいる」。現在もその状態が続いている。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">5</span>空欄に入る正しいほうを選んでください。<br><em>I _______ him when I was in elementary school.</em></div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5" data-correct="true"> met</label>
+            <label class="quiz-option"><input type="radio" name="q5"> have met</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans5')">🔍 解答・解説を見る</button>
+            <div id="ans5" class="answer-content hidden">
+              <div class="correct-ans">✅ met（過去形）</div>
+              <div class="explanation">when I was in elementary school（小学生のとき）は過去の特定時点 → 現在完了は使えません。過去形の met が正解。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score1')">📊 採点する</button>
+        </div>
+        <div id="score1"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Practice 2 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題②｜空所補充（完了形・完了進行形）</div>
+    <div class="section-card-body">
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">6</span>I _______ (study) Japanese history since I was ten.</div>
+        <input class="fill-input" placeholder="ここに答えを入力" oninput="checkFill(this,'have been studying')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans6')">🔍 解答・解説を見る</button>
+          <div id="ans6" class="answer-content hidden">
+            <div class="correct-ans">✅ have been studying</div>
+            <div class="explanation">since I was ten（10歳から）は開始時点 → 継続。study は動作動詞なので現在完了進行形（have been studying）が自然。動作の継続を強調します。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">7</span>_______ you ever _______ (eat) octopus?</div>
+        <input class="fill-input" placeholder="2語で答えを入力（例：Have eaten）" oninput="checkFill(this,'have eaten')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans7')">🔍 解答・解説を見る</button>
+          <div id="ans7" class="answer-content hidden">
+            <div class="correct-ans">✅ Have ... eaten</div>
+            <div class="explanation">経験用法の疑問文。Have you ever + 過去分詞〜? の形。eat の過去分詞は eaten（不規則変化）。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">8</span>She _______ (just / arrive) at the station.</div>
+        <input class="fill-input" placeholder="ここに答えを入力" oninput="checkFill(this,'has just arrived')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans8')">🔍 解答・解説を見る</button>
+          <div id="ans8" class="answer-content hidden">
+            <div class="correct-ans">✅ has just arrived</div>
+            <div class="explanation">just（ちょうど）は完了用法のキーワード。主語が she なので has を使う。arrive の過去分詞は arrived（規則動詞）。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">9</span>They _______ (wait) for the bus for 30 minutes.</div>
+        <input class="fill-input" placeholder="ここに答えを入力" oninput="checkFill(this,'have been waiting')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans9')">🔍 解答・解説を見る</button>
+          <div id="ans9" class="answer-content hidden">
+            <div class="correct-ans">✅ have been waiting</div>
+            <div class="explanation">for 30 minutes（30分間）は期間 → 継続。wait は動作動詞なので現在完了進行形（have been waiting）で「ずっと待ち続けている」と表現します。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 3 -->
+  <section class="section-card theme-orange">
+    <div class="section-card-header">✏️ 練習問題③｜have been to vs have gone to</div>
+    <div class="section-card-body">
+      <p>「have been to」と「have gone to」の区別は頻出！正しい方を選んでください。</p>
+      <form id="mcq-form2">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">10</span>A: Where is Ken? B: He _______ the convenience store.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q10" data-correct="true"> has gone to</label>
+            <label class="quiz-option"><input type="radio" name="q10"> has been to</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans10')">🔍 解答・解説を見る</button>
+            <div id="ans10" class="answer-content hidden">
+              <div class="correct-ans">✅ has gone to</div>
+              <div class="explanation">Kenが今ここにいない（コンビニに行ってしまった）→ 結果を表す has gone to。has been to なら「コンビニに行ったことがある」という経験の意味になってしまいます。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">11</span>I _______ Kyoto three times. It's a beautiful city.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q11" data-correct="true"> have been to</label>
+            <label class="quiz-option"><input type="radio" name="q11"> have gone to</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans11')">🔍 解答・解説を見る</button>
+            <div id="ans11" class="answer-content hidden">
+              <div class="correct-ans">✅ have been to</div>
+              <div class="explanation">three times（3回）は経験の回数 → 経験用法の have been to。「京都に3回行ったことがある」。今ここで話しているので have gone to（行ってしまった）は不適切。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form2','score2')">📊 採点する</button>
+        </div>
+        <div id="score2"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">📚 長文読解</div>
+    <div class="section-card-body">
+      <p>次の英文を読んで、後の問いに答えましょう。</p>
+      <div class="reading-passage">
+        <div class="passage-num">PASSAGE</div>
+        <p>　My name is Sota, and I love playing the guitar. I <span class="underline">(A)</span> playing the guitar since I was twelve years old. At first, it was very difficult, but I never gave up.</p>
+        <p>　I <span class="underline">(B)</span> many songs in front of my family and friends. The first time I played in public, I was very nervous. However, every time I play, I feel more confident. I think music <span class="underline">(C)</span> my life richer.</p>
+        <p>　Recently, my music teacher told me about a local music competition. I <span class="underline">(D)</span> for it hard for the past two months. I hope I can do my best on the day of the competition!</p>
+      </div>
+
+      <form id="mcq-form3">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">12</span>下線部(A)の空欄に入る最も適切な表現を選んでください。</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq1" data-correct="true"> have been</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> was</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> have</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> am</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans1')">🔍 解答・解説を見る</button>
+            <div id="rans1" class="answer-content hidden">
+              <div class="correct-ans">✅ have been（→ have been playing）</div>
+              <div class="explanation">since I was twelve（12歳から）は開始時点 → 継続。play は動作動詞なので現在完了進行形（have been playing）が自然です。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">13</span>下線部(B)「多くの曲を演奏したことがある」に入る語を選んでください。</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq2" data-correct="true"> have played</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> played</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> have been playing</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans2')">🔍 解答・解説を見る</button>
+            <div id="rans2" class="answer-content hidden">
+              <div class="correct-ans">✅ have played（経験）</div>
+              <div class="explanation">「多くの曲を演奏したことがある（経験）」という意味なので現在完了の経験用法（have + 過去分詞）。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">14</span>下線部(C)「音楽が私の生活を豊かにした（その結果今も豊か）」に入る表現を選んでください。</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq3" data-correct="true"> has made</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> made</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> makes</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans3')">🔍 解答・解説を見る</button>
+            <div id="rans3" class="answer-content hidden">
+              <div class="correct-ans">✅ has made（結果・継続）</div>
+              <div class="explanation">「音楽が（過去から今まで）生活を豊かにしてきた（現在もそう）」という意味で現在完了が適切。make の過去分詞は made（不規則）。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">15</span>下線部(D)「過去2か月間ずっと練習している」に入る表現を選んでください。</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq4"> have practiced</label>
+            <label class="quiz-option"><input type="radio" name="rq4" data-correct="true"> have been practicing</label>
+            <label class="quiz-option"><input type="radio" name="rq4"> practiced</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans4')">🔍 解答・解説を見る</button>
+            <div id="rans4" class="answer-content hidden">
+              <div class="correct-ans">✅ have been practicing（現在完了進行形）</div>
+              <div class="explanation">for the past two months（過去2か月間）は期間 → 継続。practice は動作動詞なので現在完了進行形（have been practicing）で「ずっと練習し続けている」感を出せます。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form3','score3')">📊 採点する</button>
+        </div>
+        <div id="score3"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">✍️ 英作文チャレンジ ── インタビュー形式</div>
+    <div class="section-card-body">
+      <p>テーマ：<strong>「今までずっと続けていること」</strong>を英語でインタビュー形式で答えましょう。</p>
+      <div class="grammar-box">
+        <p>📌 <strong>条件</strong></p>
+        <p>① <strong>have been + -ing</strong>（現在完了進行形）を2文以上</p>
+        <p>② <strong>for または since</strong>（どちらか一方でも可）を含む</p>
+        <p>③ なぜ続けているか理由（because / so）を説明する</p>
+        <p>④ 5文以上書くこと</p>
+      </div>
+      <p style="font-size:.9rem; color:var(--gray-600); margin-bottom:.5rem;">💬 先生の質問（想定）: "What have you been doing for a long time? Tell me about it."</p>
+      <textarea class="writing-area" placeholder="例：I have been playing basketball for five years. I started when I was in elementary school because..." rows="8"></textarea>
+      <div style="margin-top:1rem;">
+        <button type="button" class="btn-answer" onclick="toggleAnswer(this,'sample1')">📝 模範解答を見る</button>
+        <div id="sample1" class="answer-content hidden" style="margin-top:.75rem;">
+          <div class="correct-ans">📝 模範解答例</div>
+          <div class="explanation">
+            I <em>have been</em> playing the piano <em>since</em> I was six years old. <em>（現在完了進行形・since）</em><br>
+            I started because my mother plays the piano and it sounded beautiful. <em>（理由）</em><br>
+            I <em>have been practicing</em> <em>for</em> about ten years now. <em>（現在完了進行形・for）</em><br>
+            It has not always been easy — sometimes I wanted to quit. <em>（現在完了の否定）</em><br>
+            However, I have performed in several school concerts and each time I feel proud of myself. <em>（経験用法）</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="lesson02.html">← Lesson 2 未来表現と進行形</a>
+    <a href="lesson04.html">Lesson 4 助動詞の活用 →</a>
+  </nav>
+</main>
+
+<script src="js/common.js"></script>
+<script>
+  startTimer('timer');
+  setupMCQ('mcq-form1');
+  setupMCQ('mcq-form2');
+  setupMCQ('mcq-form3');
+  updateProgress('progress', 3, 12);
+</script>
+</body>
+</html>

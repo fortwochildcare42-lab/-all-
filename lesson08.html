@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 8 | 分詞 - English Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🎓</span>
+    <span><span class="logo-text">English Master</span><span class="logo-sub">高校英語 Zoom レッスン教材</span></span>
+  </a>
+  <a href="index.html" class="btn-home">🏠 メニューへ</a>
+</header>
+
+<main class="container">
+  <div class="lesson-hero">
+    <span class="lesson-badge">LESSON 08 · 第3期</span>
+    <h1>分詞（現在分詞・過去分詞）</h1>
+    <div class="lesson-meta">
+      <span class="meta-tag">📌 -ing / pp による名詞修飾</span>
+      <span class="meta-tag">⏱ 約60分</span>
+      <span class="meta-tag">🎯 後置修飾 / 感情を動かす分詞</span>
+    </div>
+  </div>
+
+  <div class="timer-wrap">⏱ 学習時間: <span class="timer-num" id="timer">00:00</span></div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- Grammar 1 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説① ── 分詞の2種類と名詞修飾</div>
+    <div class="section-card-body">
+      <table class="grammar-table">
+        <thead><tr><th></th><th>現在分詞（-ing）</th><th>過去分詞（pp）</th></tr></thead>
+        <tbody>
+          <tr><td><strong>意味</strong></td><td>〜している（能動・進行）</td><td>〜された（受動・完了）</td></tr>
+          <tr><td><strong>名詞修飾</strong></td><td>名詞が自らその動作をしている</td><td>名詞が動作を受けている</td></tr>
+          <tr>
+            <td><strong>前置修飾（1語）</strong></td>
+            <td>a <em>sleeping</em> baby（眠っている赤ちゃん）</td>
+            <td>a <em>broken</em> window（割られた窓）</td>
+          </tr>
+          <tr>
+            <td><strong>後置修飾（2語以上）</strong></td>
+            <td>the boy <em>running over there</em><br>（向こうで走っている少年）</td>
+            <td>the letter <em>written in English</em><br>（英語で書かれた手紙）</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="point-box">
+        <strong>後置修飾がポイント！</strong><br>
+        分詞が2語以上なら名詞の「後ろ」から修飾する。<br>
+        The woman <em>wearing a red hat</em> is my sister.（赤い帽子をかぶっている女性は私の姉です）
+      </div>
+    </div>
+  </section>
+
+  <!-- Grammar 2 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説② ── 感情を表す分詞（exciting vs excited）</div>
+    <div class="section-card-body">
+      <p>感情動詞の分詞は「人」か「もの・こと」かで使い分けます！</p>
+      <table class="grammar-table">
+        <thead><tr><th>現在分詞（-ing）</th><th>過去分詞（-ed）</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>「〜させる・引き起こす」<br>→ 物・事に使う<br><em>interesting, exciting, surprising,<br>boring, tiring, amazing, moving</em></td>
+            <td>「〜させられた・感じる」<br>→ 人に使う<br><em>interested, excited, surprised,<br>bored, tired, amazed, moved</em></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-box">
+        <div class="eng">This movie is <span class="highlight">exciting</span>. / I am <span class="highlight">excited</span> about the movie.</div>
+        <div class="jpn">この映画はわくわくさせる。/ 私はその映画にわくわくしている。</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">The news was <span class="highlight">surprising</span>. / We were <span class="highlight">surprised</span> at the news.</div>
+        <div class="jpn">そのニュースは驚かせるものだった。/ 私たちはそのニュースに驚いた。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 1 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題①｜現在分詞 vs 過去分詞（選択）</div>
+    <div class="section-card-body">
+      <form id="mcq-form1">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">1</span>Who is the girl _______ the piano over there?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" data-correct="true"> playing</label>
+            <label class="quiz-option"><input type="radio" name="q1"> played</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans1')">🔍 解答・解説を見る</button>
+            <div id="ans1" class="answer-content hidden">
+              <div class="correct-ans">✅ playing（現在分詞）</div>
+              <div class="explanation">the girl が自分でピアノを弾いている（能動）→ 現在分詞 playing。「向こうでピアノを弾いている女の子は誰ですか？」</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">2</span>I found a wallet _______ on the street.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2"> lying</label>
+            <label class="quiz-option"><input type="radio" name="q2" data-correct="true"> left</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans2')">🔍 解答・解説を見る</button>
+            <div id="ans2" class="answer-content hidden">
+              <div class="correct-ans">✅ left（過去分詞）</div>
+              <div class="explanation">財布は「道に置かれた」（受動）→ 過去分詞 left。leave の過去分詞は left（不規則）。「道に落ちていた財布」= a wallet left on the street。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">3</span>The language _______ in Brazil is Portuguese.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3"> speaking</label>
+            <label class="quiz-option"><input type="radio" name="q3" data-correct="true"> spoken</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans3')">🔍 解答・解説を見る</button>
+            <div id="ans3" class="answer-content hidden">
+              <div class="correct-ans">✅ spoken（過去分詞）</div>
+              <div class="explanation">言語は「話される」（受動）→ 過去分詞 spoken。speak の過去分詞は spoken（不規則）。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">4</span>Look at the leaves _______ from the tree in the autumn wind.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4" data-correct="true"> falling</label>
+            <label class="quiz-option"><input type="radio" name="q4"> fallen</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans4')">🔍 解答・解説を見る</button>
+            <div id="ans4" class="answer-content hidden">
+              <div class="correct-ans">✅ falling（現在分詞）</div>
+              <div class="explanation">葉が「落ちている（今まさに）」という進行中の動作 → 現在分詞 falling。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">5</span>The story was very _______ . （感動的な・話がそういう性質）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5" data-correct="true"> moving</label>
+            <label class="quiz-option"><input type="radio" name="q5"> moved</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans5')">🔍 解答・解説を見る</button>
+            <div id="ans5" class="answer-content hidden">
+              <div class="correct-ans">✅ moving（現在分詞・もの）</div>
+              <div class="explanation">話（もの・こと）が「感動させる」性質を持っている → moving（現在分詞）。moved は「人が感動した」状態に使います。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score1')">📊 採点する</button>
+        </div>
+        <div id="score1"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Practice 2 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題②｜後置修飾（並べ替え）</div>
+    <div class="section-card-body">
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">6</span>「向こうで走っている少年は私の弟です。」<br><small style="color:var(--gray-500)">[ over there / the boy / is / my brother / running ]</small></div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans6')">🔍 解答・解説を見る</button>
+          <div id="ans6" class="answer-content hidden">
+            <div class="correct-ans">✅ The boy running over there is my brother.</div>
+            <div class="explanation">現在分詞 running over there が the boy を後ろから修飾。「向こうで走っている少年」= The boy running over there。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">7</span>「英語で書かれたその手紙は読みやすかった。」<br><small style="color:var(--gray-500)">[ the letter / in English / was / easy / written / to read ]</small></div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans7')">🔍 解答・解説を見る</button>
+          <div id="ans7" class="answer-content hidden">
+            <div class="correct-ans">✅ The letter written in English was easy to read.</div>
+            <div class="explanation">過去分詞 written in English が the letter を後置修飾。「英語で書かれた手紙」= The letter written in English。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">📚 長文読解</div>
+    <div class="section-card-body">
+      <div class="reading-passage">
+        <div class="passage-num">PASSAGE ── 写真を見て状況を実況中継</div>
+        <p>　Look at this photo from our school festival last autumn. In the center of the picture, there is a girl <span class="underline">(A)</span> a traditional Japanese dance. She is <span class="underline">(B)</span> in a beautiful kimono <span class="underline">(C)</span> with colorful flowers.</p>
+        <p>　To the left, you can see a group of students <span class="underline">(D)</span> at the performance. Their faces look <span class="underline">(E)</span> and happy. There is also a sign <span class="underline">(F)</span> "Welcome to Our Festival!" on the wall behind them.</p>
+        <p>　The atmosphere of the festival was very <span class="underline">(G)</span> . Everyone — teachers and students — was <span class="underline">(H)</span> by the wonderful performances. It was truly an <span class="underline">(I)</span> day.</p>
+      </div>
+
+      <form id="mcq-form2">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">8</span>(A)「踊っている女の子」→ 分詞の種類は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq1" data-correct="true"> performing（現在分詞）</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> performed（過去分詞）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans1')">🔍 解答・解説を見る</button>
+            <div id="rans1" class="answer-content hidden">
+              <div class="correct-ans">✅ performing（現在分詞・能動）</div>
+              <div class="explanation">女の子が自分で踊りを「している」→ 能動なので現在分詞。a girl performing a traditional Japanese dance。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">9</span>(C)「花で飾られた（kimono）」→ 分詞は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq2"> decorating</label>
+            <label class="quiz-option"><input type="radio" name="rq2" data-correct="true"> decorated</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans2')">🔍 解答・解説を見る</button>
+            <div id="rans2" class="answer-content hidden">
+              <div class="correct-ans">✅ decorated（過去分詞・受動）</div>
+              <div class="explanation">着物が「花で飾られた」→ 受動なので過去分詞 decorated。decorate の過去分詞は decorated。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">10</span>(G)「雰囲気がわくわくさせるものだった」→ 正しい分詞は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq3" data-correct="true"> exciting（現在分詞・もの）</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> excited（過去分詞・人）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans3')">🔍 解答・解説を見る</button>
+            <div id="rans3" class="answer-content hidden">
+              <div class="correct-ans">✅ exciting（もの・こと → -ing）</div>
+              <div class="explanation">雰囲気（もの・こと）が「わくわくさせる」性質 → exciting。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">11</span>(H)「人々が感動させられた」→ 正しい分詞は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq4"> moving（現在分詞・もの）</label>
+            <label class="quiz-option"><input type="radio" name="rq4" data-correct="true"> moved（過去分詞・人）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans4')">🔍 解答・解説を見る</button>
+            <div id="rans4" class="answer-content hidden">
+              <div class="correct-ans">✅ moved（人 → -ed）</div>
+              <div class="explanation">Everyone（人）が「感動させられた」→ moved（過去分詞）。be moved by〜 = 〜に感動する。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form2','score2')">📊 採点する</button>
+        </div>
+        <div id="score2"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">✍️ 英作文チャレンジ ── 状況を実況中継しよう</div>
+    <div class="section-card-body">
+      <p>テーマ：あなたの<strong>学校・地域・旅先での風景</strong>を英語で実況中継してください。現在分詞・過去分詞を使って描写しましょう。</p>
+      <div class="grammar-box">
+        <p>📌 <strong>条件</strong></p>
+        <p>① <strong>現在分詞（-ing）で名詞を後置修飾</strong>する文を2文以上</p>
+        <p>② <strong>過去分詞（pp）で名詞を後置修飾</strong>する文を2文以上</p>
+        <p>③ <strong>感情分詞</strong>（exciting/excited など）を1文以上使う</p>
+        <p>④ "The ... -ing/pp ... is/are ..." の構文で始まる文を含める</p>
+      </div>
+      <textarea class="writing-area" placeholder='例："The boy running over there is my best friend, Kenta. He is wearing a uniform made by our school..."' rows="8"></textarea>
+      <div style="margin-top:1rem;">
+        <button type="button" class="btn-answer" onclick="toggleAnswer(this,'sample1')">📝 模範解答を見る</button>
+        <div id="sample1" class="answer-content hidden" style="margin-top:.75rem;">
+          <div class="correct-ans">📝 模範解答例（学校の風景）</div>
+          <div class="explanation">
+            Look at this photo from our school sports day!<br>
+            The boy <em>running in the front</em> is my best friend, Ryo. <em>（現在分詞・後置修飾）</em><br>
+            The girl <em>cheering on the side</em> is my classmate, Hina. <em>（現在分詞・後置修飾）</em><br>
+            The banner <em>made by our class</em> says "Win the Gold!" <em>（過去分詞・後置修飾）</em><br>
+            The trophies <em>displayed on the table</em> are for the winners. <em>（過去分詞・後置修飾）</em><br>
+            The whole event was very <em>exciting</em>, and all the students were deeply <em>moved</em> by the team spirit. <em>（感情分詞）</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="lesson07.html">← Lesson 7 動名詞と不定詞</a>
+    <a href="lesson09.html">Lesson 9 関係詞 →</a>
+  </nav>
+</main>
+
+<script src="js/common.js"></script>
+<script>
+  startTimer('timer');
+  setupMCQ('mcq-form1');
+  setupMCQ('mcq-form2');
+  updateProgress('progress', 8, 12);
+</script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 10 | 比較表現 - English Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🎓</span>
+    <span><span class="logo-text">English Master</span><span class="logo-sub">高校英語 Zoom レッスン教材</span></span>
+  </a>
+  <a href="index.html" class="btn-home">🏠 メニューへ</a>
+</header>
+
+<main class="container">
+  <div class="lesson-hero">
+    <span class="lesson-badge">LESSON 10 · 第4期</span>
+    <h1>比較表現</h1>
+    <div class="lesson-meta">
+      <span class="meta-tag">📌 原級・比較級・最上級</span>
+      <span class="meta-tag">⏱ 約60分</span>
+      <span class="meta-tag">🎯 データ分析・社会問題の比較</span>
+    </div>
+  </div>
+
+  <div class="timer-wrap">⏱ 学習時間: <span class="timer-num" id="timer">00:00</span></div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- Grammar 1 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説① ── 比較の3段階</div>
+    <div class="section-card-body">
+      <table class="grammar-table">
+        <thead><tr><th>種類</th><th>形</th><th>意味</th><th>例文</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>原級</strong></td>
+            <td>as + 形容詞/副詞 + as</td>
+            <td>〜と同じくらい…だ</td>
+            <td>Ken is <em>as tall as</em> Tom.</td>
+          </tr>
+          <tr>
+            <td><strong>比較級</strong></td>
+            <td>形容詞-er / more + 形容詞 + than</td>
+            <td>〜より…だ</td>
+            <td>She is <em>taller than</em> her sister.</td>
+          </tr>
+          <tr>
+            <td><strong>最上級</strong></td>
+            <td>the + 形容詞-est / the most + 形容詞 + in/of</td>
+            <td>〜の中で一番…だ</td>
+            <td>Mt. Fuji is <em>the highest mountain</em> in Japan.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="margin-top:1rem"><strong>比較級・最上級の作り方</strong></p>
+      <table class="grammar-table">
+        <thead><tr><th>パターン</th><th>比較級</th><th>最上級</th><th>例</th></tr></thead>
+        <tbody>
+          <tr><td>1音節・通常</td><td>-er</td><td>-est</td><td>tall → taller → tallest</td></tr>
+          <tr><td>語末 e</td><td>-r</td><td>-st</td><td>nice → nicer → nicest</td></tr>
+          <tr><td>短母音+子音1字</td><td>子音重ねて -er</td><td>子音重ねて -est</td><td>big → bigger → biggest</td></tr>
+          <tr><td>子音+y</td><td>y → ier</td><td>y → iest</td><td>happy → happier → happiest</td></tr>
+          <tr><td>2音節以上</td><td>more〜</td><td>most〜</td><td>interesting → more interesting → most interesting</td></tr>
+          <tr><td>不規則変化</td><td>—</td><td>—</td><td>good → better → best<br>bad → worse → worst<br>many/much → more → most<br>little → less → least</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Grammar 2 -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説② ── 重要な比較表現</div>
+    <div class="section-card-body">
+      <div class="vocab-grid">
+        <div class="vocab-item"><span class="word">not as〜 as</span><span class="meaning">…ほど〜ではない</span></div>
+        <div class="vocab-item"><span class="word">much/far + 比較級</span><span class="meaning">はるかに〜だ</span></div>
+        <div class="vocab-item"><span class="word">比較級 + and + 比較級</span><span class="meaning">ますます〜になる</span></div>
+        <div class="vocab-item"><span class="word">the + 比較級, the + 比較級</span><span class="meaning">〜すればするほど…だ</span></div>
+        <div class="vocab-item"><span class="word">one of the 最上級 + 複数名詞</span><span class="meaning">最も〜な〜の一つ</span></div>
+        <div class="vocab-item"><span class="word">比較級 + than any other + 単数名詞</span><span class="meaning">他のどの〜よりも</span></div>
+      </div>
+      <div class="example-box">
+        <div class="eng">The more you practice, the <span class="highlight">better</span> you become.</div>
+        <div class="jpn">練習すればするほど、上手になる。</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">Tokyo is one of the <span class="highlight">largest</span> cities in the world.</div>
+        <div class="jpn">東京は世界で最も大きな都市の一つだ。</div>
+      </div>
+      <div class="example-box">
+        <div class="eng">Climate change is <span class="highlight">far more</span> serious than we think.</div>
+        <div class="jpn">気候変動は私たちが思うよりもはるかに深刻だ。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 1 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題①｜比較の形式（選択）</div>
+    <div class="section-card-body">
+      <form id="mcq-form1">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">1</span>This problem is _______ than that one.</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" data-correct="true"> more serious</label>
+            <label class="quiz-option"><input type="radio" name="q1"> most serious</label>
+            <label class="quiz-option"><input type="radio" name="q1"> as serious</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans1')">🔍 解答・解説を見る</button>
+            <div id="ans1" class="answer-content hidden">
+              <div class="correct-ans">✅ more serious（比較級 + than）</div>
+              <div class="explanation">than があるので比較級。serious は2音節以上なので more を使う。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">2</span>She is _______ student in our class. （一番背が高い）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2"> taller than</label>
+            <label class="quiz-option"><input type="radio" name="q2" data-correct="true"> the tallest</label>
+            <label class="quiz-option"><input type="radio" name="q2"> as tall as</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans2')">🔍 解答・解説を見る</button>
+            <div id="ans2" class="answer-content hidden">
+              <div class="correct-ans">✅ the tallest（最上級）</div>
+              <div class="explanation">クラスの中で「一番」→ 最上級。in our class という範囲の表現が手がかり。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">3</span>My score is _______ good _______ yours. （同じくらい良い）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3" data-correct="true"> as / as</label>
+            <label class="quiz-option"><input type="radio" name="q3"> more / than</label>
+            <label class="quiz-option"><input type="radio" name="q3"> the most / of</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans3')">🔍 解答・解説を見る</button>
+            <div id="ans3" class="answer-content hidden">
+              <div class="correct-ans">✅ as / as（原級）</div>
+              <div class="explanation">「同じくらい」→ as + 形容詞/副詞 + as の原級比較。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">4</span>The problem is getting _______ and _______ . （ますます深刻になっている）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4" data-correct="true"> more serious / more serious</label>
+            <label class="quiz-option"><input type="radio" name="q4"> most serious / most serious</label>
+            <label class="quiz-option"><input type="radio" name="q4"> as serious / as serious</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans4')">🔍 解答・解説を見る</button>
+            <div id="ans4" class="answer-content hidden">
+              <div class="correct-ans">✅ more serious and more serious</div>
+              <div class="explanation">「ますます〜になる」= 比較級 + and + 比較級。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">5</span>「〜すればするほど〜になる」を表す構文の正しい形は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5" data-correct="true"> The more you read, the smarter you become.</label>
+            <label class="quiz-option"><input type="radio" name="q5"> More you read, smarter you become.</label>
+            <label class="quiz-option"><input type="radio" name="q5"> As more you read, as smarter you become.</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans5')">🔍 解答・解説を見る</button>
+            <div id="ans5" class="answer-content hidden">
+              <div class="correct-ans">✅ The more you read, the smarter you become.</div>
+              <div class="explanation">「the + 比較級, the + 比較級」の構文。The + 比較級 を文頭に置くのが鉄則です。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score1')">📊 採点する</button>
+        </div>
+        <div id="score1"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Practice 2 -->
+  <section class="section-card theme-orange">
+    <div class="section-card-header">✏️ 練習問題②｜比較を使った英文完成</div>
+    <div class="section-card-body">
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">6</span>「富士山は日本で最も高い山だ。」Mt. Fuji is _______ _______ mountain in Japan.</div>
+        <input class="fill-input" placeholder="2語で入力" oninput="checkFill(this,'the highest')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans6')">🔍 解答・解説を見る</button>
+          <div id="ans6" class="answer-content hidden">
+            <div class="correct-ans">✅ the highest</div>
+            <div class="explanation">最上級 = the + est形。high → higher → highest（規則変化）。in Japan（範囲）がヒント。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">7</span>「この問題は私が思っていたよりもはるかに難しい。」This problem is _______ _______ difficult than I thought.</div>
+        <input class="fill-input" placeholder="2語で入力" oninput="checkFill(this,'far more')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans7')">🔍 解答・解説を見る</button>
+          <div id="ans7" class="answer-content hidden">
+            <div class="correct-ans">✅ far more</div>
+            <div class="explanation">「はるかに」= much / far + 比較級。difficult は2音節以上なので more difficult。far more difficult が正解。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">📚 長文読解 ── 2つの社会問題を比較する</div>
+    <div class="section-card-body">
+      <div class="reading-passage">
+        <div class="passage-num">PASSAGE</div>
+        <p>　Today, we face many serious global problems. Some people argue that climate change is <span class="underline">(A)</span> dangerous than plastic pollution. However, others say that plastic pollution is just <span class="underline">(B)</span> serious as climate change because it kills marine life directly.</p>
+        <p>　According to recent data, global temperatures have risen <span class="underline">(C)</span> and more rapidly over the past 50 years. Some scientists say climate change is <span class="underline">(D)</span> most urgent problem humanity has ever faced.</p>
+        <p>　On the other hand, over 8 million tons of plastic enter the ocean every year. This figure is growing <span class="underline">(E)</span> larger every year. Some areas of the ocean now have <span class="underline">(F)</span> plastic than fish by weight.</p>
+        <p>　Both problems require our immediate attention. <span class="underline">(G)</span> seriously we take these problems, the better chance we have to solve them.</p>
+      </div>
+
+      <form id="mcq-form2">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">8</span>(A)「〜よりも危険だ」→ ？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq1" data-correct="true"> more dangerous</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> most dangerous</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> as dangerous</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans1')">🔍 解答・解説を見る</button>
+            <div id="rans1" class="answer-content hidden">
+              <div class="correct-ans">✅ more dangerous（比較級 + than）</div>
+              <div class="explanation">than があるので比較級。dangerous は3音節以上なので more dangerous。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">9</span>(B)「同じくらい深刻だ」→ ？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq2" data-correct="true"> as（as serious as〜）</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> more</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> the most</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans2')">🔍 解答・解説を見る</button>
+            <div id="rans2" class="answer-content hidden">
+              <div class="correct-ans">✅ as（just as serious as〜 = 同じくらい深刻）</div>
+              <div class="explanation">as + 形容詞/副詞 + as の原級比較。just を加えると「まったく同じくらい」という強調になります。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">10</span>(E)「ますます大きくなっている」→ ？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq3" data-correct="true"> larger and（larger and larger）</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> more large</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> the largest</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans3')">🔍 解答・解説を見る</button>
+            <div id="rans3" class="answer-content hidden">
+              <div class="correct-ans">✅ larger and larger（比較級 + and + 比較級）</div>
+              <div class="explanation">「ますます〜になる」= 比較級 and 比較級。growing larger and larger = ますます大きくなっている。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">11</span>(G)「〜すればするほど〜だ」→ ？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq4" data-correct="true"> The more（The more seriously... the better）</label>
+            <label class="quiz-option"><input type="radio" name="rq4"> More seriously</label>
+            <label class="quiz-option"><input type="radio" name="rq4"> As seriously</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans4')">🔍 解答・解説を見る</button>
+            <div id="rans4" class="answer-content hidden">
+              <div class="correct-ans">✅ The more（The more seriously〜, the better〜）</div>
+              <div class="explanation">「the + 比較級, the + 比較級」の構文。The more seriously we take these problems, the better chance we have.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form2','score2')">📊 採点する</button>
+        </div>
+        <div id="score2"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">✍️ 英作文チャレンジ ── 2つのものを比較しよう</div>
+    <div class="section-card-body">
+      <p>テーマ：<strong>2つの都市・食べ物・社会問題・スポーツ</strong>などを比較して、自分の意見を書きましょう。</p>
+      <div class="grammar-box">
+        <p>📌 <strong>条件</strong></p>
+        <p>① <strong>比較級（〜 er than / more〜 than）</strong>を2文以上</p>
+        <p>② <strong>最上級（the〜est / the most〜）</strong>を1文以上</p>
+        <p>③ <strong>原級（as〜as）</strong>を1文以上</p>
+        <p>④ 自分の意見・理由を述べる（I think〜 because〜）</p>
+      </div>
+      <textarea class="writing-area" placeholder="例：I think Osaka is more exciting than Tokyo because... However, Tokyo has the most train stations in the world..." rows="8"></textarea>
+      <div style="margin-top:1rem;">
+        <button type="button" class="btn-answer" onclick="toggleAnswer(this,'sample1')">📝 模範解答を見る</button>
+        <div id="sample1" class="answer-content hidden" style="margin-top:.75rem;">
+          <div class="correct-ans">📝 模範解答例（大阪と東京の比較）</div>
+          <div class="explanation">
+            I think Osaka is <em>more lively</em> than Tokyo because the people are friendly and the food is amazing. <em>（比較級）</em><br>
+            However, Tokyo has <em>more job opportunities</em> than Osaka for young people. <em>（比較級）</em><br>
+            Tokyo is <em>the largest</em> city in Japan and one of <em>the most populated</em> cities in the world. <em>（最上級）</em><br>
+            In terms of cost of living, Osaka is <em>not as expensive as</em> Tokyo. <em>（原級の否定）</em><br>
+            I think both cities are <em>as fascinating as</em> each other — they just have different charms. <em>（原級）</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="lesson09.html">← Lesson 9 関係詞</a>
+    <a href="lesson11.html">Lesson 11 仮定法 →</a>
+  </nav>
+</main>
+
+<script src="js/common.js"></script>
+<script>
+  startTimer('timer');
+  setupMCQ('mcq-form1');
+  setupMCQ('mcq-form2');
+  updateProgress('progress', 10, 12);
+</script>
+</body>
+</html>

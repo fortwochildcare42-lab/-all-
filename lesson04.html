@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 4 | 助動詞の活用 - English Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🎓</span>
+    <span><span class="logo-text">English Master</span><span class="logo-sub">高校英語 Zoom レッスン教材</span></span>
+  </a>
+  <a href="index.html" class="btn-home">🏠 メニューへ</a>
+</header>
+
+<main class="container">
+  <div class="lesson-hero">
+    <span class="lesson-badge">LESSON 04 · 第2期</span>
+    <h1>助動詞の活用</h1>
+    <div class="lesson-meta">
+      <span class="meta-tag">📌 must / should / may / can / could</span>
+      <span class="meta-tag">⏱ 約60分</span>
+      <span class="meta-tag">🎯 推量・義務・提案・許可</span>
+    </div>
+  </div>
+
+  <div class="timer-wrap">⏱ 学習時間: <span class="timer-num" id="timer">00:00</span></div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- Grammar -->
+  <section class="section-card theme-blue">
+    <div class="section-card-header">📖 文法解説 ── 助動詞の意味マップ</div>
+    <div class="section-card-body">
+      <div class="grammar-box">
+        <div class="formula">助動詞 + 動詞の原形</div>
+        <p style="margin-top:.4rem">助動詞の後は必ず動詞の<strong>原形</strong>！三単現の -s・過去形は不要。</p>
+      </div>
+
+      <table class="grammar-table">
+        <thead><tr><th>助動詞</th><th>意味（主要）</th><th>例文</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>must</strong></td>
+            <td>① 義務（〜しなければならない）<br>② 強い推量（〜に違いない）</td>
+            <td>You must study harder.<br>He must be tired — he looks pale.</td>
+          </tr>
+          <tr>
+            <td><strong>must not（mustn't）</strong></td>
+            <td>禁止（〜してはいけない）</td>
+            <td>You must not run in the hallway.</td>
+          </tr>
+          <tr>
+            <td><strong>should</strong></td>
+            <td>① 義務・当然（〜すべきだ）<br>② 提案・アドバイス</td>
+            <td>You should see a doctor.<br>We should leave early.</td>
+          </tr>
+          <tr>
+            <td><strong>may</strong></td>
+            <td>① 許可（〜してもよい）<br>② 推量（〜かもしれない）</td>
+            <td>You may use my dictionary.<br>It may rain tonight.</td>
+          </tr>
+          <tr>
+            <td><strong>might</strong></td>
+            <td>弱い推量（〜かもしれない、mayより不確か）</td>
+            <td>She might come to the party.</td>
+          </tr>
+          <tr>
+            <td><strong>can</strong></td>
+            <td>① 能力（〜できる）<br>② 許可（〜してよい）<br>③ 可能性（〜のこともある）</td>
+            <td>I can speak English.<br>Can I use your pen?</td>
+          </tr>
+          <tr>
+            <td><strong>could</strong></td>
+            <td>① can の過去形<br>② 丁寧な依頼（〜していただけますか）<br>③ 弱い可能性</td>
+            <td>Could you help me?</td>
+          </tr>
+          <tr>
+            <td><strong>have to</strong></td>
+            <td>義務（〜しなければならない）<br>※must より外部からの義務感</td>
+            <td>I have to finish this report today.</td>
+          </tr>
+          <tr>
+            <td><strong>don't have to</strong></td>
+            <td>不必要（〜しなくてよい）<br>※ must not（禁止）と大違い！</td>
+            <td>You don't have to come tomorrow.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="point-box">
+        <strong>⚠ must not vs don't have to の違い！</strong><br>
+        must not = 禁止（絶対してはダメ）<br>
+        don't have to = 不必要（しなくていい、でもしてもOK）
+      </div>
+
+      <p><strong>推量の強さ比較</strong></p>
+      <div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:.85rem 1rem;margin:.5rem 0;font-size:.9rem;">
+        <strong>must</strong>（〜に違いない　90%以上）&nbsp;＞&nbsp;
+        <strong>may</strong>（〜かもしれない　50%）&nbsp;＞&nbsp;
+        <strong>might / could</strong>（〜かもしれない　30%以下）
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 1 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題①｜助動詞の意味選択</div>
+    <div class="section-card-body">
+      <form id="mcq-form1">
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">1</span>You <u>must not</u> use your phone during the exam. この must not の意味は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" data-correct="true"> 禁止（〜してはいけない）</label>
+            <label class="quiz-option"><input type="radio" name="q1"> 不必要（〜しなくてよい）</label>
+            <label class="quiz-option"><input type="radio" name="q1"> 義務（〜しなければならない）</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans1')">🔍 解答・解説を見る</button>
+            <div id="ans1" class="answer-content hidden">
+              <div class="correct-ans">✅ 禁止</div>
+              <div class="explanation">must not は「〜してはいけない」という禁止を表します。試験中の携帯使用禁止。don't have to（〜しなくてよい）と混同しないよう注意！</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">2</span>She must be exhausted — she has been working since 6 a.m.　この must の意味は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2"> 義務</label>
+            <label class="quiz-option"><input type="radio" name="q2" data-correct="true"> 強い推量（〜に違いない）</label>
+            <label class="quiz-option"><input type="radio" name="q2"> 許可</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans2')">🔍 解答・解説を見る</button>
+            <div id="ans2" class="answer-content hidden">
+              <div class="correct-ans">✅ 強い推量</div>
+              <div class="explanation">「朝6時から働き続けている」という根拠から「疲れているに違いない」と推量しています。must + be + 形容詞で推量を表します。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">3</span>You don't have to bring anything. Just come!　この意味は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3"> 何も持ってきてはいけない</label>
+            <label class="quiz-option"><input type="radio" name="q3" data-correct="true"> 何も持ってこなくていい</label>
+            <label class="quiz-option"><input type="radio" name="q3"> 必ず何かを持ってこなければならない</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans3')">🔍 解答・解説を見る</button>
+            <div id="ans3" class="answer-content hidden">
+              <div class="correct-ans">✅ 何も持ってこなくていい</div>
+              <div class="explanation">don't have to は「不必要」（〜しなくてよい）。「手ぶらで来てOK」という意味。must not（禁止）との違いを確認！</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">4</span>「熱がありますね。今日は学校を休んだほうがいいよ。」</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4"> You must stay home today.</label>
+            <label class="quiz-option"><input type="radio" name="q4" data-correct="true"> You should stay home today.</label>
+            <label class="quiz-option"><input type="radio" name="q4"> You may stay home today.</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans4')">🔍 解答・解説を見る</button>
+            <div id="ans4" class="answer-content hidden">
+              <div class="correct-ans">✅ You should stay home today.</div>
+              <div class="explanation">アドバイス・提案には should が最適。must は「絶対に〜しなければならない」と強すぎ、may は「許可」の意味になってしまいます。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">5</span>It _______ rain this afternoon. The sky is getting dark. （根拠がある推量・50%程度）</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5"> must</label>
+            <label class="quiz-option"><input type="radio" name="q5" data-correct="true"> may</label>
+            <label class="quiz-option"><input type="radio" name="q5"> should</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans5')">🔍 解答・解説を見る</button>
+            <div id="ans5" class="answer-content hidden">
+              <div class="correct-ans">✅ may</div>
+              <div class="explanation">空が暗くなっているという根拠はあるが「50%程度」の不確かな推量なので may。must なら「〜に違いない」となり推量が強すぎます。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form1','score1')">📊 採点する</button>
+        </div>
+        <div id="score1"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Practice 2 -->
+  <section class="section-card theme-purple">
+    <div class="section-card-header">✏️ 練習問題②｜助動詞の空所補充</div>
+    <div class="section-card-body">
+      <p>日本語のヒントを参考に、最も適切な助動詞を入れてください。</p>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">6</span>（依頼・丁寧に）_______ you open the window, please? It's hot in here.</div>
+        <input class="fill-input" placeholder="ここに助動詞を入力" oninput="checkFill(this,'could')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans6')">🔍 解答・解説を見る</button>
+          <div id="ans6" class="answer-content hidden">
+            <div class="correct-ans">✅ Could（または Would）</div>
+            <div class="explanation">丁寧な依頼には Could you〜? が一般的。Can you〜? より丁寧。「窓を開けていただけますか？」</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">7</span>（禁止）Students _______ _______ eat in the library.</div>
+        <input class="fill-input" placeholder="2語で入力（例：must not）" oninput="checkFill(this,'must not')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans7')">🔍 解答・解説を見る</button>
+          <div id="ans7" class="answer-content hidden">
+            <div class="correct-ans">✅ must not（mustn't）</div>
+            <div class="explanation">図書館での飲食禁止 → must not（禁止）。should not より強い禁止の意味。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">8</span>（推量・90%以上）That _______ be Mike's bag — he always carries a red one.</div>
+        <input class="fill-input" placeholder="ここに助動詞を入力" oninput="checkFill(this,'must')">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans8')">🔍 解答・解説を見る</button>
+          <div id="ans8" class="answer-content hidden">
+            <div class="correct-ans">✅ must</div>
+            <div class="explanation">「いつも赤いカバンを持っている」という根拠から「〜に違いない」と強く推量しています → must。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">9</span>（不必要）You _______ _______ hurry. We have plenty of time.</div>
+        <input class="fill-input" placeholder="2語で入力" oninput="checkFill(this,"don't have to")">
+        <div class="answer-section" style="margin-top:.6rem">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans9')">🔍 解答・解説を見る</button>
+          <div id="ans9" class="answer-content hidden">
+            <div class="correct-ans">✅ don't have to</div>
+            <div class="explanation">「時間はたっぷりある」→ 急ぐ必要はない → don't have to（不必要）。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice 3 -->
+  <section class="section-card theme-orange">
+    <div class="section-card-header">✏️ 練習問題③｜並べ替え（提案・相談表現）</div>
+    <div class="section-card-body">
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">10</span>「君は医者に診てもらうべきだ。」<br><small style="color:var(--gray-500)">[ a doctor / you / should / see ]</small></div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans10')">🔍 解答・解説を見る</button>
+          <div id="ans10" class="answer-content hidden">
+            <div class="correct-ans">✅ You should see a doctor.</div>
+            <div class="explanation">should + 動詞の原形。アドバイスや提案の表現。「医者に診てもらうべきだ」。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">11</span>「彼女は今日来ないかもしれない。」<br><small style="color:var(--gray-500)">[ come / not / today / she / might ]</small></div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans11')">🔍 解答・解説を見る</button>
+          <div id="ans11" class="answer-content hidden">
+            <div class="correct-ans">✅ She might not come today.</div>
+            <div class="explanation">might not + 動詞の原形。弱い否定推量（30%以下の確率で来ない）。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-question"><span class="quiz-number">12</span>「ここで写真を撮ってもいいですか？」<br><small style="color:var(--gray-500)">[ I / pictures / may / take / here ]</small></div>
+        <div class="answer-section">
+          <button type="button" class="btn-answer" onclick="toggleAnswer(this,'ans12')">🔍 解答・解説を見る</button>
+          <div id="ans12" class="answer-content hidden">
+            <div class="correct-ans">✅ May I take pictures here?</div>
+            <div class="explanation">May I 〜? は「〜してもいいですか？」という許可を求める丁寧な表現。Can I〜? より改まった言い方です。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">📚 長文読解</div>
+    <div class="section-card-body">
+      <p>次の英文を読んで、後の問いに答えましょう。</p>
+      <div class="reading-passage">
+        <div class="passage-num">PASSAGE</div>
+        <p>　Kenji is a 16-year-old student who wants to study abroad in the future, but he is not sure what to do. One day, he talked to his older sister, Nana, who has experience studying in the UK.</p>
+        <p>　Nana said, "If you really want to go, you <span class="underline">(A)</span> start preparing now. First, you <span class="underline">(B)</span> improve your English — especially your listening and speaking skills. You <span class="underline">(C)</span> memorize grammar rules all day; instead, try talking with people online or watching English videos."</p>
+        <p>　Kenji asked, "Can I do part-time work there to save money?" Nana replied, "You <span class="underline">(D)</span> be careful about visa rules. International students <span class="underline">(E)</span> work unlimited hours — there are limits."</p>
+      </div>
+
+      <form id="mcq-form2">
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">13</span>下線部(A)：「今すぐ準備を始めるべきだ」に適切な助動詞は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq1" data-correct="true"> should</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> must not</label>
+            <label class="quiz-option"><input type="radio" name="rq1"> may</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans1')">🔍 解答・解説を見る</button>
+            <div id="rans1" class="answer-content hidden">
+              <div class="correct-ans">✅ should</div>
+              <div class="explanation">アドバイス・提案には should。「〜すべきだ」という意味で、強制でも禁止でもなく勧めのニュアンス。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">14</span>下線部(B)：「英語力を伸ばさなければならない（義務）」は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq2"> may</label>
+            <label class="quiz-option"><input type="radio" name="rq2" data-correct="true"> must / have to</label>
+            <label class="quiz-option"><input type="radio" name="rq2"> might</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans2')">🔍 解答・解説を見る</button>
+            <div id="rans2" class="answer-content hidden">
+              <div class="correct-ans">✅ must / have to</div>
+              <div class="explanation">義務を表すには must または have to。留学するために英語力が必要という必然性から must が自然です。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">15</span>下線部(C)：「文法ルールを丸暗記しなくてよい（不必要）」は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq3"> must not</label>
+            <label class="quiz-option"><input type="radio" name="rq3" data-correct="true"> don't have to</label>
+            <label class="quiz-option"><input type="radio" name="rq3"> should not</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans3')">🔍 解答・解説を見る</button>
+            <div id="rans3" class="answer-content hidden">
+              <div class="correct-ans">✅ don't have to</div>
+              <div class="explanation">「丸暗記しなくてよい（でも悪くはない）」→ 不必要の don't have to。must not だと「絶対してはいけない」になってしまいます。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">16</span>下線部(D)：「ビザのルールに気をつけなければならない」は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq4" data-correct="true"> must</label>
+            <label class="quiz-option"><input type="radio" name="rq4"> might</label>
+            <label class="quiz-option"><input type="radio" name="rq4"> could</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans4')">🔍 解答・解説を見る</button>
+            <div id="rans4" class="answer-content hidden">
+              <div class="correct-ans">✅ must</div>
+              <div class="explanation">法的なビザルールに関する義務・強い必要性 → must be careful で「気をつけなければならない」。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-question"><span class="quiz-number">17</span>下線部(E)：「留学生は無制限に働いてはいけない」は？</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="rq5"> don't have to</label>
+            <label class="quiz-option"><input type="radio" name="rq5" data-correct="true"> must not / cannot</label>
+            <label class="quiz-option"><input type="radio" name="rq5"> should not</label>
+          </div>
+          <div class="answer-section">
+            <button type="button" class="btn-answer" onclick="toggleAnswer(this,'rans5')">🔍 解答・解説を見る</button>
+            <div id="rans5" class="answer-content hidden">
+              <div class="correct-ans">✅ must not / cannot</div>
+              <div class="explanation">法律上の禁止事項なので must not または cannot（〜できない）が適切。「無制限には働けない」。</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.25rem;">
+          <button type="button" class="btn-check-all" onclick="calcScore('mcq-form2','score2')">📊 採点する</button>
+        </div>
+        <div id="score2"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section class="section-card theme-green">
+    <div class="section-card-header">✍️ 英作文チャレンジ ── アドバイスをしよう</div>
+    <div class="section-card-body">
+      <p>テーマ：友達から「最近勉強に集中できない」という相談を受けました。<strong>助動詞を使い分けて</strong>アドバイスの文章を書きましょう。</p>
+      <div class="grammar-box">
+        <p>📌 <strong>条件</strong>（すべて使うこと）</p>
+        <p>① <strong>should</strong>（〜すべきだ・おすすめ）を2文以上</p>
+        <p>② <strong>must not または don't have to</strong> を1文以上</p>
+        <p>③ <strong>may または might</strong>（推量）を1文以上</p>
+        <p>④ <strong>could you〜? または can you〜?</strong>（提案）を1文以上</p>
+        <p>⑤ 5文以上書くこと</p>
+      </div>
+      <textarea class="writing-area" placeholder="例：You should try studying in a quiet place. You don't have to study for a long time..." rows="8"></textarea>
+      <div style="margin-top:1rem;">
+        <button type="button" class="btn-answer" onclick="toggleAnswer(this,'sample1')">📝 模範解答を見る</button>
+        <div id="sample1" class="answer-content hidden" style="margin-top:.75rem;">
+          <div class="correct-ans">📝 模範解答例</div>
+          <div class="explanation">
+            I understand how you feel. Here is my advice.<br><br>
+            First, you <em>should</em> try studying in a quiet place, like a library. <em>（提案）</em><br>
+            You <em>should</em> also set a short study goal — for example, focus for 25 minutes and then take a 5-minute break. <em>（提案）</em><br>
+            You <em>must not</em> use your smartphone while studying — it will only distract you. <em>（禁止）</em><br>
+            You <em>don't have to</em> study for hours at once; short and regular sessions are more effective. <em>（不必要）</em><br>
+            The reason you can't focus <em>might</em> be tiredness or stress, so make sure you sleep enough. <em>（推量）</em><br>
+            <em>Could you</em> try these tips for one week and tell me how they work? <em>（提案・依頼）</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="lesson03.html">← Lesson 3 完了形</a>
+    <a href="lesson05.html">Lesson 5 受動態 →</a>
+  </nav>
+</main>
+
+<script src="js/common.js"></script>
+<script>
+  startTimer('timer');
+  setupMCQ('mcq-form1');
+  setupMCQ('mcq-form2');
+  updateProgress('progress', 4, 12);
+</script>
+</body>
+</html>
